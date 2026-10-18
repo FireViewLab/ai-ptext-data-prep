@@ -1,0 +1,516 @@
+{
+  "analysis_type": "read-only inventory and exact overlap; no labels or merge",
+  "baseline": {
+    "path": "C:\\Users\\kimha\\Projects\\ai-ptext-data-prep\\outputs\\merged_reviews.xlsx",
+    "sheet": "Reviews",
+    "rows": 8965,
+    "header_row": 1,
+    "header_count": 1,
+    "skipped_empty_rows": 0,
+    "platform_counts": {
+      "ohouse": 5111,
+      "elevenst": 713,
+      "oliveyoung": 3066,
+      "musinsa": 75
+    },
+    "identifier_types": {
+      "product_id": {
+        "int": 5424,
+        "str": 3541
+      },
+      "review_id": {
+        "int": 8565,
+        "str": 400
+      }
+    }
+  },
+  "normalization": {
+    "content": "str(value), strip, collapse consecutive whitespace; preserve case, punctuation, Korean, English, and numbers",
+    "identifiers": "strings unchanged; int to decimal text; integral float to integer decimal text; preserve string leading zero and literal .0"
+  },
+  "platform_mapping": {
+    "elevenst": {
+      "expected_from_filename": "elevenst",
+      "observed_values": {
+        "elevenst": 171052
+      },
+      "exact_match": true
+    },
+    "kurly": {
+      "expected_from_filename": "kurly",
+      "observed_values": {
+        "kurly": 463843
+      },
+      "exact_match": true
+    },
+    "musinsa": {
+      "expected_from_filename": "musinsa",
+      "observed_values": {
+        "musinsa": 118192
+      },
+      "exact_match": true
+    },
+    "naver": {
+      "expected_from_filename": "naver",
+      "observed_values": {
+        "naver": 1286
+      },
+      "exact_match": true
+    },
+    "ohouse": {
+      "expected_from_filename": "ohouse",
+      "observed_values": {
+        "ohouse": 6828
+      },
+      "exact_match": true
+    },
+    "oliveyoung": {
+      "expected_from_filename": "oliveyoung",
+      "observed_values": {
+        "oliveyoung": 390742
+      },
+      "exact_match": true
+    }
+  },
+  "schema_compatibility": {
+    "all_incoming_columns_identical": true,
+    "incoming_columns": [
+      "platform",
+      "product_id",
+      "review_id",
+      "content",
+      "rating",
+      "written_at",
+      "option",
+      "image_count",
+      "helpful_count",
+      "product_name",
+      "product_category",
+      "first_collected_at"
+    ],
+    "shared_with_baseline": [
+      "platform",
+      "product_id",
+      "review_id",
+      "content",
+      "rating",
+      "written_at",
+      "option",
+      "helpful_count"
+    ],
+    "baseline_only": [
+      "author",
+      "images",
+      "collected_at"
+    ],
+    "incoming_only": [
+      "image_count",
+      "product_name",
+      "product_category",
+      "first_collected_at"
+    ]
+  },
+  "platforms": {
+    "elevenst": {
+      "path": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_elevenst.csv\\reviews_elevenst.csv",
+      "columns": [
+        "platform",
+        "product_id",
+        "review_id",
+        "content",
+        "rating",
+        "written_at",
+        "option",
+        "image_count",
+        "helpful_count",
+        "product_name",
+        "product_category",
+        "first_collected_at"
+      ],
+      "platform_values": {
+        "elevenst": 171052
+      },
+      "platform_matches_expected": true,
+      "total_rows": 171052,
+      "unique_product_id": 1949,
+      "unique_review_id": 149938,
+      "unique_product_id_review_id": 171052,
+      "blank_content": 0,
+      "blank_rating": 0,
+      "malformed_rows": 0,
+      "incomplete_identity_rows": 0,
+      "exact_duplicate_full_rows": {
+        "groups": 0,
+        "participating_rows": 0,
+        "extra_rows": 0
+      },
+      "duplicate_review_id": {
+        "groups": 9225,
+        "participating_rows": 30339,
+        "extra_rows": 21114
+      },
+      "review_ids_across_multiple_products": 9225,
+      "normalized_content_duplicates": {
+        "groups": 11753,
+        "participating_rows": 40273,
+        "extra_rows": 28520
+      },
+      "same_product_normalized_content_duplicates": {
+        "groups": 2377,
+        "participating_rows": 6771,
+        "extra_rows": 4394
+      },
+      "content_length": {
+        "basis": "normalized nonblank content characters",
+        "min": 1,
+        "median": 55.0,
+        "mean": 70.05581343684962,
+        "max": 2974
+      },
+      "under_20_chars": 20561,
+      "under_20_ratio": 0.12020321305801744,
+      "identity_overlap_rows": 360,
+      "review_id_overlap_rows": 394,
+      "content_overlap_rows": 559,
+      "new_identity_rows": 170692,
+      "incoming_unique_normalized_contents": 142532,
+      "new_unique_normalized_contents": 142163
+    },
+    "kurly": {
+      "path": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_kurly.csv\\reviews_kurly.csv",
+      "columns": [
+        "platform",
+        "product_id",
+        "review_id",
+        "content",
+        "rating",
+        "written_at",
+        "option",
+        "image_count",
+        "helpful_count",
+        "product_name",
+        "product_category",
+        "first_collected_at"
+      ],
+      "platform_values": {
+        "kurly": 463843
+      },
+      "platform_matches_expected": true,
+      "total_rows": 463843,
+      "unique_product_id": 2366,
+      "unique_review_id": 450976,
+      "unique_product_id_review_id": 463843,
+      "blank_content": 0,
+      "blank_rating": 463843,
+      "malformed_rows": 0,
+      "incomplete_identity_rows": 0,
+      "exact_duplicate_full_rows": {
+        "groups": 0,
+        "participating_rows": 0,
+        "extra_rows": 0
+      },
+      "duplicate_review_id": {
+        "groups": 12556,
+        "participating_rows": 25423,
+        "extra_rows": 12867
+      },
+      "review_ids_across_multiple_products": 12556,
+      "normalized_content_duplicates": {
+        "groups": 21671,
+        "participating_rows": 61349,
+        "extra_rows": 39678
+      },
+      "same_product_normalized_content_duplicates": {
+        "groups": 3424,
+        "participating_rows": 8108,
+        "extra_rows": 4684
+      },
+      "content_length": {
+        "basis": "normalized nonblank content characters",
+        "min": 1,
+        "median": 20.0,
+        "mean": 28.958828741621627,
+        "max": 3614
+      },
+      "under_20_chars": 230021,
+      "under_20_ratio": 0.49590270845954343,
+      "identity_overlap_rows": 0,
+      "review_id_overlap_rows": 0,
+      "content_overlap_rows": 19,
+      "new_identity_rows": 463843,
+      "incoming_unique_normalized_contents": 424165,
+      "new_unique_normalized_contents": 424161
+    },
+    "musinsa": {
+      "path": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_musinsa.csv\\reviews_musinsa.csv",
+      "columns": [
+        "platform",
+        "product_id",
+        "review_id",
+        "content",
+        "rating",
+        "written_at",
+        "option",
+        "image_count",
+        "helpful_count",
+        "product_name",
+        "product_category",
+        "first_collected_at"
+      ],
+      "platform_values": {
+        "musinsa": 118192
+      },
+      "platform_matches_expected": true,
+      "total_rows": 118192,
+      "unique_product_id": 1827,
+      "unique_review_id": 118192,
+      "unique_product_id_review_id": 118192,
+      "blank_content": 0,
+      "blank_rating": 0,
+      "malformed_rows": 0,
+      "incomplete_identity_rows": 0,
+      "exact_duplicate_full_rows": {
+        "groups": 0,
+        "participating_rows": 0,
+        "extra_rows": 0
+      },
+      "duplicate_review_id": {
+        "groups": 0,
+        "participating_rows": 0,
+        "extra_rows": 0
+      },
+      "review_ids_across_multiple_products": 0,
+      "normalized_content_duplicates": {
+        "groups": 6603,
+        "participating_rows": 14550,
+        "extra_rows": 7947
+      },
+      "same_product_normalized_content_duplicates": {
+        "groups": 6456,
+        "participating_rows": 13518,
+        "extra_rows": 7062
+      },
+      "content_length": {
+        "basis": "normalized nonblank content characters",
+        "min": 5,
+        "median": 42.0,
+        "mean": 64.85422871260322,
+        "max": 1445
+      },
+      "under_20_chars": 24,
+      "under_20_ratio": 0.0002030594287261405,
+      "identity_overlap_rows": 1,
+      "review_id_overlap_rows": 1,
+      "content_overlap_rows": 72,
+      "new_identity_rows": 118191,
+      "incoming_unique_normalized_contents": 110245,
+      "new_unique_normalized_contents": 110242
+    },
+    "naver": {
+      "path": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_naver.csv\\reviews_naver.csv",
+      "columns": [
+        "platform",
+        "product_id",
+        "review_id",
+        "content",
+        "rating",
+        "written_at",
+        "option",
+        "image_count",
+        "helpful_count",
+        "product_name",
+        "product_category",
+        "first_collected_at"
+      ],
+      "platform_values": {
+        "naver": 1286
+      },
+      "platform_matches_expected": true,
+      "total_rows": 1286,
+      "unique_product_id": 56,
+      "unique_review_id": 1286,
+      "unique_product_id_review_id": 1286,
+      "blank_content": 0,
+      "blank_rating": 0,
+      "malformed_rows": 0,
+      "incomplete_identity_rows": 0,
+      "exact_duplicate_full_rows": {
+        "groups": 0,
+        "participating_rows": 0,
+        "extra_rows": 0
+      },
+      "duplicate_review_id": {
+        "groups": 0,
+        "participating_rows": 0,
+        "extra_rows": 0
+      },
+      "review_ids_across_multiple_products": 0,
+      "normalized_content_duplicates": {
+        "groups": 20,
+        "participating_rows": 44,
+        "extra_rows": 24
+      },
+      "same_product_normalized_content_duplicates": {
+        "groups": 11,
+        "participating_rows": 26,
+        "extra_rows": 15
+      },
+      "content_length": {
+        "basis": "normalized nonblank content characters",
+        "min": 9,
+        "median": 83.0,
+        "mean": 126.47278382581649,
+        "max": 3058
+      },
+      "under_20_chars": 145,
+      "under_20_ratio": 0.11275272161741835,
+      "identity_overlap_rows": 0,
+      "review_id_overlap_rows": 0,
+      "content_overlap_rows": 0,
+      "new_identity_rows": 1286,
+      "incoming_unique_normalized_contents": 1262,
+      "new_unique_normalized_contents": 1262
+    },
+    "ohouse": {
+      "path": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_ohouse.csv\\reviews_ohouse.csv",
+      "columns": [
+        "platform",
+        "product_id",
+        "review_id",
+        "content",
+        "rating",
+        "written_at",
+        "option",
+        "image_count",
+        "helpful_count",
+        "product_name",
+        "product_category",
+        "first_collected_at"
+      ],
+      "platform_values": {
+        "ohouse": 6828
+      },
+      "platform_matches_expected": true,
+      "total_rows": 6828,
+      "unique_product_id": 100,
+      "unique_review_id": 6828,
+      "unique_product_id_review_id": 6828,
+      "blank_content": 0,
+      "blank_rating": 0,
+      "malformed_rows": 0,
+      "incomplete_identity_rows": 0,
+      "exact_duplicate_full_rows": {
+        "groups": 0,
+        "participating_rows": 0,
+        "extra_rows": 0
+      },
+      "duplicate_review_id": {
+        "groups": 0,
+        "participating_rows": 0,
+        "extra_rows": 0
+      },
+      "review_ids_across_multiple_products": 0,
+      "normalized_content_duplicates": {
+        "groups": 97,
+        "participating_rows": 226,
+        "extra_rows": 129
+      },
+      "same_product_normalized_content_duplicates": {
+        "groups": 80,
+        "participating_rows": 183,
+        "extra_rows": 103
+      },
+      "content_length": {
+        "basis": "normalized nonblank content characters",
+        "min": 20,
+        "median": 96.0,
+        "mean": 117.28500292911541,
+        "max": 1226
+      },
+      "under_20_chars": 0,
+      "under_20_ratio": 0.0,
+      "identity_overlap_rows": 324,
+      "review_id_overlap_rows": 324,
+      "content_overlap_rows": 326,
+      "new_identity_rows": 6504,
+      "incoming_unique_normalized_contents": 6699,
+      "new_unique_normalized_contents": 6373
+    },
+    "oliveyoung": {
+      "path": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_oliveyoung.csv\\reviews_oliveyoung.csv",
+      "columns": [
+        "platform",
+        "product_id",
+        "review_id",
+        "content",
+        "rating",
+        "written_at",
+        "option",
+        "image_count",
+        "helpful_count",
+        "product_name",
+        "product_category",
+        "first_collected_at"
+      ],
+      "platform_values": {
+        "oliveyoung": 390742
+      },
+      "platform_matches_expected": true,
+      "total_rows": 390742,
+      "unique_product_id": 2230,
+      "unique_review_id": 371961,
+      "unique_product_id_review_id": 390742,
+      "blank_content": 0,
+      "blank_rating": 0,
+      "malformed_rows": 0,
+      "incomplete_identity_rows": 0,
+      "exact_duplicate_full_rows": {
+        "groups": 0,
+        "participating_rows": 0,
+        "extra_rows": 0
+      },
+      "duplicate_review_id": {
+        "groups": 17069,
+        "participating_rows": 35850,
+        "extra_rows": 18781
+      },
+      "review_ids_across_multiple_products": 17069,
+      "normalized_content_duplicates": {
+        "groups": 24632,
+        "participating_rows": 61068,
+        "extra_rows": 36436
+      },
+      "same_product_normalized_content_duplicates": {
+        "groups": 7980,
+        "participating_rows": 19205,
+        "extra_rows": 11225
+      },
+      "content_length": {
+        "basis": "normalized nonblank content characters",
+        "min": 14,
+        "median": 74.0,
+        "mean": 134.57082678596106,
+        "max": 1613
+      },
+      "under_20_chars": 5,
+      "under_20_ratio": 1.2796167291972709e-05,
+      "identity_overlap_rows": 1179,
+      "review_id_overlap_rows": 1409,
+      "content_overlap_rows": 1669,
+      "new_identity_rows": 389563,
+      "incoming_unique_normalized_contents": 354306,
+      "new_unique_normalized_contents": 353061
+    }
+  },
+  "combined": {
+    "raw_incoming_rows": 1151943,
+    "identity_overlap_rows": 1864,
+    "content_overlap_rows": 2645,
+    "new_identity_rows": 1150079,
+    "identity_unclassifiable_rows": 0,
+    "incoming_unique_normalized_contents": 1038436,
+    "new_unique_normalized_contents": 1036492,
+    "cross_platform_normalized_content_duplicate_groups": 756,
+    "cross_platform_normalized_content_participating_rows": 6926
+  }
+}
