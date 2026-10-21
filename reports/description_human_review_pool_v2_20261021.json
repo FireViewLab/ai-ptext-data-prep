@@ -1,0 +1,2411 @@
+{
+  "analysis_type": "V2 HIGH/MEDIUM human-review pool; analyzer tiers are not labels",
+  "source": {
+    "path": "outputs/new_description_candidates_20261018.csv",
+    "sha256": "90034f2367a84f5f6b24b0e5351071cfeeecf3446c8193d400984c11c734af71",
+    "v1_candidate_rows": 574
+  },
+  "counts": {
+    "v1_total": 574,
+    "v2_high": 26,
+    "v2_medium": 361,
+    "v2_not_candidate": 187,
+    "v2_survivor_total": 387,
+    "reduction_count": 187,
+    "reduction_percentage": 0.32578397212543553
+  },
+  "platform_distribution": {
+    "elevenst": {
+      "HIGH": 1,
+      "MEDIUM": 28,
+      "TOTAL": 29
+    },
+    "kurly": {
+      "HIGH": 0,
+      "MEDIUM": 5,
+      "TOTAL": 5
+    },
+    "musinsa": {
+      "HIGH": 0,
+      "MEDIUM": 11,
+      "TOTAL": 11
+    },
+    "naver": {
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "TOTAL": 0
+    },
+    "ohouse": {
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "TOTAL": 0
+    },
+    "oliveyoung": {
+      "HIGH": 25,
+      "MEDIUM": 317,
+      "TOTAL": 342
+    }
+  },
+  "integrity": {
+    "candidate_id_duplicates": 0,
+    "normalized_content_duplicates": 0,
+    "blank_human_label": 387,
+    "blank_pattern_type": 387,
+    "blank_review_note": 387,
+    "high_rows_are_contiguous_first": true
+  },
+  "regression_sanity": {
+    "NEW-DESC-000005": {
+      "v1_tier": "HIGH",
+      "v2_tier": "NOT_CANDIDATE",
+      "excluded_from_review_pool": true
+    },
+    "NEW-DESC-000026": {
+      "v1_tier": "HIGH",
+      "v2_tier": "NOT_CANDIDATE",
+      "excluded_from_review_pool": true
+    },
+    "NEW-DESC-000047": {
+      "v1_tier": "HIGH",
+      "v2_tier": "NOT_CANDIDATE",
+      "excluded_from_review_pool": true
+    }
+  },
+  "human_review_guidance": {
+    "human_label_allowed": [
+      "SUSPICIOUS",
+      "NORMAL",
+      "UNCERTAIN"
+    ],
+    "pattern_type_examples": [
+      "PRODUCT_DESCRIPTION_REPLACEMENT",
+      "OTHER",
+      "UNKNOWN"
+    ],
+    "fields_are_automatically_filled": false
+  },
+  "candidate_manifest": [
+    {
+      "candidate_id": "NEW-DESC-000003",
+      "v2_tier": "HIGH",
+      "platform": "elevenst",
+      "content_sha256": "ee23ba035fd45326b6214b6af70f91d3cf890fb82f8b3bfbb491394bbef6e179"
+    },
+    {
+      "candidate_id": "NEW-DESC-000004",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "009f9e8516f5cfce8f40aa6a5f55ff0a7522562abe40fda510c621b2de73adc0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000007",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "067fe94443c3fa7df7d6b8e74dfd96cee066cb50d6d47a9e8afbd6b8274855ab"
+    },
+    {
+      "candidate_id": "NEW-DESC-000008",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "0732d625f36d9744dc20ab2f0cfad4e63cf3dccfc936a44a3f18658f9ef8e4c8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000014",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "42e7507b6b1d74caedcc27430f9b9f4a3bcf8e93c349db4e915df8d1fa8f1bc1"
+    },
+    {
+      "candidate_id": "NEW-DESC-000015",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "4a9605ccf5f8e62a07ecf7fa3e0bc943eec89f38973de5c0ba012b7dbbcf9b97"
+    },
+    {
+      "candidate_id": "NEW-DESC-000018",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "52866312993a4f694da55a543b7e9dd4c15c209db9bb7738e5ffaffff241f083"
+    },
+    {
+      "candidate_id": "NEW-DESC-000019",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "5606a30a21117c6d863f3ebf90a2f853349988b330ca3421655c27347db4a85f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000020",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "5d11a4bb1fc4a3b4b8c6d1be253b2b67eb37350cc4ee3532b1b484a6d3f92759"
+    },
+    {
+      "candidate_id": "NEW-DESC-000021",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "6996ce7cbf881bb76433c08e4bba56ae9bd9228f6f4e78864f2dacbf1d2b4bfa"
+    },
+    {
+      "candidate_id": "NEW-DESC-000023",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "6cac5607f92575b1b12f53d31aa74277ba27cf815f548d46036c164b5647ab6b"
+    },
+    {
+      "candidate_id": "NEW-DESC-000025",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "7874568cf97315d96dd76803eda616ec10da7414efad7adbefd7121b0d1fd6bc"
+    },
+    {
+      "candidate_id": "NEW-DESC-000027",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "84955cf4dfe95ce2e609a3684afcda5ffea77c30aac4426c6414765ae9c39b44"
+    },
+    {
+      "candidate_id": "NEW-DESC-000037",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "b3c544126d16dd2798f4fa5677a6406dc380a75359d28e9d0a053a423ff8b8cb"
+    },
+    {
+      "candidate_id": "NEW-DESC-000038",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "b740653373c532cb40a36c97bd1ad57933f3a32d9909cfd8d76e795b2a2b0e23"
+    },
+    {
+      "candidate_id": "NEW-DESC-000040",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "c0562644cd3cf6f33e36c002007bd31210283579fb1c37381876f402bb6ffe04"
+    },
+    {
+      "candidate_id": "NEW-DESC-000041",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "c21198b546b204720d3a1b888967940f50b78e1dbcf3ab58107cdd5b1d8f6fc0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000042",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "caabcba88e81530cdef3c2ccf457910ed5c3b83f27fe6196d4a6e9550affc03c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000044",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "ce89a2cb5a92b112874ee40d5372e96cef03693b3367a6365415d53eac0999f7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000045",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "d15871e15635a1a31af44ab95a63612c76feeb67352ea4a59871b94bf986bb5a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000046",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "d39c20f5fb65ca1b4f6acd1fbd9ad3e9fce5937b014a0c1d54edb4f45dc8e807"
+    },
+    {
+      "candidate_id": "NEW-DESC-000048",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "dfcac3685b9db6a2260bd147562ad7544252d6287c9f88a298c599cb15152868"
+    },
+    {
+      "candidate_id": "NEW-DESC-000050",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "e56f702ee5f7ed8549e2111be00544f78f0023f1652e08c62d915eedd9f93344"
+    },
+    {
+      "candidate_id": "NEW-DESC-000051",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "e88ee4a10eb1b8a6b98940bbea52e292cfc6da6e76051c1277b076dd06e3cc3f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000052",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "eb572c418be4823a57b206aa276a787be141073a02fc682c1bf080f525f3e6c9"
+    },
+    {
+      "candidate_id": "NEW-DESC-000053",
+      "v2_tier": "HIGH",
+      "platform": "oliveyoung",
+      "content_sha256": "ed5048879f123c58a90d56604cb50a7e7b6a0131dc24dd66ff2154ba0eb6f427"
+    },
+    {
+      "candidate_id": "NEW-DESC-000059",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "051d7010554dc859648d6232f3b04a1f4e1c6abfe3d3f4ef2a273c9c70c4586a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000066",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "19f1d2ae1b3bc7df40c71eb90ca9899268a302f961544f8bffa363aa4cb64e45"
+    },
+    {
+      "candidate_id": "NEW-DESC-000072",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "345211918751f216837bbc14de60ba7577378d867a867b8e34e5536095f28db3"
+    },
+    {
+      "candidate_id": "NEW-DESC-000078",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "5085bc0d0e61b5d63ca954eb5065ce7719bfd0b21dac693d51ad46b6ee5e7060"
+    },
+    {
+      "candidate_id": "NEW-DESC-000080",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "5a2009fcac5c40f7a3fc9750ff804bdce0ae6d47836e0bff9aa4ce9f47037bbc"
+    },
+    {
+      "candidate_id": "NEW-DESC-000083",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "638c500cf0aa33aa3aa59642acbafd28956bd0b55c3653b1e5383e3a3585b0d2"
+    },
+    {
+      "candidate_id": "NEW-DESC-000085",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "6c6fbfada9d218610f6ddec79d535e44edfe869d2d1a3f876b34b6266cd1a9b0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000086",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "709b8d17319604d386d60530981d3fee27d431b31e022034d0d08fd7e2584b70"
+    },
+    {
+      "candidate_id": "NEW-DESC-000087",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "780b6587e74fb61bee44f0d5664736e799fb04f7d24cc357b86b2efef5350a6d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000089",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "8ad1073c9f36cd76b6b8546c97ff580b0cd6eadaafacb54f6f35295ea9571443"
+    },
+    {
+      "candidate_id": "NEW-DESC-000090",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "8cd9f64ec322e12c002bd7785a69804c895a25dfad96169c12ceeedce501d46c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000091",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "8d1cf69b8f9e2354b908f8fef8a1ac2a8e66229c64d5d0742919919072e832cc"
+    },
+    {
+      "candidate_id": "NEW-DESC-000092",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "8dc29ce4491239f60afd3b616aabd7266a9c22e8dd14ee8b9a92423537a493fb"
+    },
+    {
+      "candidate_id": "NEW-DESC-000094",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "9b78c621b4ab91865a79b1245e56194600991e581580b43c43a231479eccc96a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000097",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "ab43cef0bf3337a7a56b3d0ce5a714cbb3f4b1167d55869876d5c25be1eaab31"
+    },
+    {
+      "candidate_id": "NEW-DESC-000098",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "b9523e569ebe16ed2f0cccef4a0fc3f3f2c750962592dfedfeb4631581e5aa7d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000099",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "baeacdf4048761dbfff8b75e34795a5d1e3c9651d6c98b3bc5b89523c788d627"
+    },
+    {
+      "candidate_id": "NEW-DESC-000102",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "c6bd55e565c7e3fbc1a878369d832d4e7fb428571ebd7cd9972fe181277cb5b7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000103",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "c8629ff8b3e42ee6a6658f2a4f2bae3d35ca31265583e3a1a3f17d3e572127d8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000104",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "d1ee0cc89dd15c30125a9733e6ff21510ae93a9470f0fbe81883972c61380951"
+    },
+    {
+      "candidate_id": "NEW-DESC-000105",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "d65ee2495cc884296341220450cc853c3d9a2c115aab0e2d3780406404400573"
+    },
+    {
+      "candidate_id": "NEW-DESC-000106",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "dde720774dcddae9e67b478c759ee0e857b8ed0f7d19ccf6700a521a291faab7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000107",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "e00391760ffeba0b73507ebbdc497ddd7ddf85067e0a90b550b941c5c0eada07"
+    },
+    {
+      "candidate_id": "NEW-DESC-000108",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "e13a2905609f738d3857805670726120f72037b16b7b382929d754ad4b474805"
+    },
+    {
+      "candidate_id": "NEW-DESC-000111",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "eb2f3dcde89cd7f352582d26d95673333f7007884bb7d36297441a152da50984"
+    },
+    {
+      "candidate_id": "NEW-DESC-000112",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "f14c021efd4905d30e66234030b902ea456fa896d4255e99894826d56fc7fbcf"
+    },
+    {
+      "candidate_id": "NEW-DESC-000113",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "f1606d9131c7fad0529c6363149b83872e5fdc6f1f1ed90d43bbb17bdb02f738"
+    },
+    {
+      "candidate_id": "NEW-DESC-000115",
+      "v2_tier": "MEDIUM",
+      "platform": "elevenst",
+      "content_sha256": "fc5c2b04c96ed227bb814cce5a14e076d5e0127ae131ec045393db491d4efd8e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000116",
+      "v2_tier": "MEDIUM",
+      "platform": "kurly",
+      "content_sha256": "555b64996e4f07b3f71737e01c335e44344b4853b577d16b7a7bef448718ac01"
+    },
+    {
+      "candidate_id": "NEW-DESC-000117",
+      "v2_tier": "MEDIUM",
+      "platform": "kurly",
+      "content_sha256": "8a8aca7b48b55b3c526a95a0962d53be2a77d54c67eee91864c024e72a94ea39"
+    },
+    {
+      "candidate_id": "NEW-DESC-000118",
+      "v2_tier": "MEDIUM",
+      "platform": "kurly",
+      "content_sha256": "98cabdee7da0faaa41655e8edec12625d291c5c44f1425ac817d28aa5bd44e4c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000121",
+      "v2_tier": "MEDIUM",
+      "platform": "kurly",
+      "content_sha256": "d69c82b1765c0cffa148e8e9531852487fdd05690fba63fd0287321a9ad7d4f0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000122",
+      "v2_tier": "MEDIUM",
+      "platform": "kurly",
+      "content_sha256": "e46762bb0d70a8fbaff7389290fab7767da7fab553655b9b4bd5d3922fe4fce0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000124",
+      "v2_tier": "MEDIUM",
+      "platform": "musinsa",
+      "content_sha256": "0a45d716b3806f9f50a90ecae64d8e8927abfd0be1fed98addf3f6f107a11a8e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000125",
+      "v2_tier": "MEDIUM",
+      "platform": "musinsa",
+      "content_sha256": "15491163f4a5f7678c4bd9e18083d8c556e77662a5006def200b52b2189908ed"
+    },
+    {
+      "candidate_id": "NEW-DESC-000126",
+      "v2_tier": "MEDIUM",
+      "platform": "musinsa",
+      "content_sha256": "26670b45e43df3c4fdf8f8816e03eb8e7e3240e7c5c0cbf47c8a6a7142953e6d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000127",
+      "v2_tier": "MEDIUM",
+      "platform": "musinsa",
+      "content_sha256": "2aec2d07f7e45d9b944f972323e3bd831e5286fce536debba9e0abf74585b662"
+    },
+    {
+      "candidate_id": "NEW-DESC-000130",
+      "v2_tier": "MEDIUM",
+      "platform": "musinsa",
+      "content_sha256": "520cd5dfff1c8c0014d92cd0ea52e0d487f7e14aa04822e9ea54a06e6863de15"
+    },
+    {
+      "candidate_id": "NEW-DESC-000131",
+      "v2_tier": "MEDIUM",
+      "platform": "musinsa",
+      "content_sha256": "58b726e1bd98051b582d41e1760679801a1e0f2ab961820df504eb0b75485a07"
+    },
+    {
+      "candidate_id": "NEW-DESC-000132",
+      "v2_tier": "MEDIUM",
+      "platform": "musinsa",
+      "content_sha256": "955b2ee9b01b954df8a6d9cf386c87f307549a55be944fe6352c9d19354200bc"
+    },
+    {
+      "candidate_id": "NEW-DESC-000133",
+      "v2_tier": "MEDIUM",
+      "platform": "musinsa",
+      "content_sha256": "a0739f880371327ed61c0b6aaa2def6f5465db99c077fc67c0b2a87b57e62142"
+    },
+    {
+      "candidate_id": "NEW-DESC-000134",
+      "v2_tier": "MEDIUM",
+      "platform": "musinsa",
+      "content_sha256": "b78ee8a0933625ac941168cb02c4e8f440fa64b61bb57e826381c1b51bbd42b4"
+    },
+    {
+      "candidate_id": "NEW-DESC-000135",
+      "v2_tier": "MEDIUM",
+      "platform": "musinsa",
+      "content_sha256": "cec6ffad3414533284f7aa852ebf95159ba7fdb9d9df9377c1d44f7b9f3e9d3a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000137",
+      "v2_tier": "MEDIUM",
+      "platform": "musinsa",
+      "content_sha256": "d8abba4585ece6c9c7787902dd7bebfe27a4c4d2adbb25584b352def80dfffa5"
+    },
+    {
+      "candidate_id": "NEW-DESC-000138",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "0053b90de2cc6be45eb43d9a2a11199619cd1384154166eee719282861970806"
+    },
+    {
+      "candidate_id": "NEW-DESC-000139",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "007b155ab521f33b75c8f8700b5babe80f7c708d71b34b51571761a6f274c867"
+    },
+    {
+      "candidate_id": "NEW-DESC-000141",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "010ec46ad5bb57f4a4bea20c56aba301f0a4eff94921564b9dd719f7cf07971f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000143",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "02053eccdf4edd4325014054c96a8852c4c8a8a83e085566c908c22b4be2e616"
+    },
+    {
+      "candidate_id": "NEW-DESC-000144",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "02c8a7df98fb5aaf3876472a7937ab68c5d832eed2e60b9039ca8dc92272dbc8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000149",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "05710b8813b6e9d576ff3773273c1effd4cb1c23d6214ec9823355468586e803"
+    },
+    {
+      "candidate_id": "NEW-DESC-000150",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "05f6204f66172608bc3d418381336a3178b01ac0e51da86481d3b65e9efe02c6"
+    },
+    {
+      "candidate_id": "NEW-DESC-000151",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "074510cf00ec82e297abd338204e6ab7e52dcb0edb6ed8e078a67fa350603131"
+    },
+    {
+      "candidate_id": "NEW-DESC-000154",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "0958665cb09aa2ba95851c984900f46e0bd40b44c21f4ec3d475c077b150ee9e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000155",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "09bae94b2168a4821e4151f623e8c4cc94f55b9b351a2f9c47a67d2c7eb9af33"
+    },
+    {
+      "candidate_id": "NEW-DESC-000156",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "0a0d7f817d52b3dffd094f6e208a112dfc6b3d28665f28fa5a449ab5a75c6cca"
+    },
+    {
+      "candidate_id": "NEW-DESC-000158",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "0ab364db755577f79a11c71c634ef41fc4c1236218860e05e2007541dcb215d9"
+    },
+    {
+      "candidate_id": "NEW-DESC-000159",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "0b17a37529d9343eb618cddac8d011ce41f99dad2c36e0d851d9869bfa544f79"
+    },
+    {
+      "candidate_id": "NEW-DESC-000160",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "0b478a8b1f898a4670d9fe3d9e28ea99ffbd90594feae7f24e66ae92333853af"
+    },
+    {
+      "candidate_id": "NEW-DESC-000161",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "0c57a4d7162268d517889b9a304c215c7cd834a7a8569b27d5e9e354538273e7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000164",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "0f8dfbc85718c8de149ff84feb7b39c47e80e00f3a5681db5469d585635d5510"
+    },
+    {
+      "candidate_id": "NEW-DESC-000166",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "107504bb3594929137b71b5bb706fec02dc4667d8bfdf9ba46d7cf1d1923f5fb"
+    },
+    {
+      "candidate_id": "NEW-DESC-000167",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "10b4ebf9724e3ddfe964871583ac6376ccfa599653fdf0b2fde673ebeb5ac690"
+    },
+    {
+      "candidate_id": "NEW-DESC-000168",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "10f1fa7a5113f62cdbbd260d6e7b21943017e683788f581a251f08acf5ec2a94"
+    },
+    {
+      "candidate_id": "NEW-DESC-000169",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "11afea47574494baf06e9b5628e03d76943626a0c3bc21c387eea1a2aea0cca5"
+    },
+    {
+      "candidate_id": "NEW-DESC-000170",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "13c4a4b6719d6df4473519169bc9d2c12bbbaebbb2be67f3429ab02acccc8982"
+    },
+    {
+      "candidate_id": "NEW-DESC-000172",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "15903d244771be0ec71ca8cd89a74eda8303be2e599acc7686df5ea3250057f2"
+    },
+    {
+      "candidate_id": "NEW-DESC-000173",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "15d7e5bf318e8886fc5753174c8101b30b3979391cf2ab90234583431fd3c39a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000174",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "1630edecdbbfbee0aa49cc2df52ecd8595c2b805faa59158b663eb45f1a49b02"
+    },
+    {
+      "candidate_id": "NEW-DESC-000175",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "1641910c8b3de335331fb81348eae38ffe25dcd95d161c24e82600897aa4af03"
+    },
+    {
+      "candidate_id": "NEW-DESC-000176",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "1681e72db2c7fb56f1e29acfc7455d634b8b4c90cf66e8bc16b5d67b5c8476ba"
+    },
+    {
+      "candidate_id": "NEW-DESC-000177",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "16e4bead43279f9eb29a42a28f1403662e606f9f8a1d0f1fb8b40daaf910a071"
+    },
+    {
+      "candidate_id": "NEW-DESC-000178",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "170b238ff2aa19b1657bbfb81622d9ddf6b4621feb422f6504830d26ceeb4a0e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000179",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "17b29fab823f14d8fd2f631293e57de5fbbd8b650f6963616312e39ee721bf18"
+    },
+    {
+      "candidate_id": "NEW-DESC-000180",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "184587240eff5e36e705b365c16896018a24ccfd16660bdf73ce1ff47d20f25d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000181",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "18c4421d069a426bb4bcd12c818e266a80d615ecd6a40aa1bd5da196b3012572"
+    },
+    {
+      "candidate_id": "NEW-DESC-000182",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "197aae230ede76ead034e502ab2f27003c4595666a6d623ca4d2fa6f7aee5ea4"
+    },
+    {
+      "candidate_id": "NEW-DESC-000183",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "1a42c67030ac904409657c04411cee45de353f6fb8c65ce3ea64480f8127ab1a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000188",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "1be038e91be477c9abd6dcd2e0163669bfe26dc592fcb78789f411ddec1ec6e7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000189",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "1c33663b039abd198af6107a58c851a94d3a034db64a3a07a022226117e821c1"
+    },
+    {
+      "candidate_id": "NEW-DESC-000193",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "1d09d0ec6e2dd82b22718f979e81975a1594393e26bbccbe2fe46da125937fb3"
+    },
+    {
+      "candidate_id": "NEW-DESC-000194",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "1d6754bc618ebc154ca74efac459a8a3f06389dc9fd1fbff6b2e353e6d190590"
+    },
+    {
+      "candidate_id": "NEW-DESC-000197",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "1fd9629a4597622fb07085ebb998c1e56fa4d61af5e41f1725d57f9f790bcce0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000199",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "21b6f6f06e187c7b57d4b4380685738a32f0f2cf34b2d5cccd7505a100b0aa4a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000200",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "221eaaa3877ca59a86ad8a402923a34f7a970813df8e1d5694d2a1649d7e8e71"
+    },
+    {
+      "candidate_id": "NEW-DESC-000201",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "235d899dc759dc432b99f63bb163c62c725e270ab21be04b49cb3e9387272114"
+    },
+    {
+      "candidate_id": "NEW-DESC-000203",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "242f83f39823fc61e7fcc065e60948e24b726a8e42c061ccfcb80dbecdaae578"
+    },
+    {
+      "candidate_id": "NEW-DESC-000204",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "247cacf4798960b6559860ce7f878df387b0da61e692837effa887b16d20722a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000205",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "24a356871597eed1657b42aeb5181fd1caf67fa8bb086548177f89340b035620"
+    },
+    {
+      "candidate_id": "NEW-DESC-000207",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "254ef0c51044f36164461107b2cdd2101558187d14394abf5332ef64090f7927"
+    },
+    {
+      "candidate_id": "NEW-DESC-000208",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "25545deffb245a559afd85c02b426624be4faa3a095272729d81aaefbbd4bd7b"
+    },
+    {
+      "candidate_id": "NEW-DESC-000210",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "261e90522920d1a953dab505b359686f2e43b200b9d68dd2f897bbb52e84478c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000211",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "265fe35831ef95d4b69a752e5094b5045a810f6643897e9daec4b87dd80d8d6a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000212",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "26ad89ad0dfd2ddbb20cee3add85c9e15b8408d88eab74ac6a5202fa4e2105a2"
+    },
+    {
+      "candidate_id": "NEW-DESC-000213",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "27883da9b55ffa937df8501cb53e8a76c1611475230e602d6b001aa38d10257f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000215",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "2878ec7f5e530bfb51198c62e24d7c6fbf6b7fb5c275fa25074c7b963448bd17"
+    },
+    {
+      "candidate_id": "NEW-DESC-000216",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "294ad2ec9dcff95be4717430a5b3682154d43e6908a144791eaa8c904b551b27"
+    },
+    {
+      "candidate_id": "NEW-DESC-000217",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "29a2fe37f3324dabf9cbf77444cc5680c6c510b299d635b0d5027987b77a773c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000218",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "2a46f12be329e215b31f5d20d52cc1df9e0b1444473ec571bf0d540e9be46f9c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000220",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "2c5bca3396242944484d924a1d6d1ba1a5f6b527295ab3f47a3d36bcadfbdf6d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000221",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "2ca0f2a170d95c86ac5435693ee011a72cbdf2ab493aff4eab83f209c5009a21"
+    },
+    {
+      "candidate_id": "NEW-DESC-000223",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "2ce178f402eb54af29dca40fcac623c8715581c35385018b62cdee33cf51f14d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000225",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "2d7a560589f7b45b5198c46619193c454cea7c2736a6a1bf29f2c01e345a8e2d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000226",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "2d8194d605c4564a1cbd6c40dbfd873e4182af2306e9e4b32082c9cd4cfa2f01"
+    },
+    {
+      "candidate_id": "NEW-DESC-000227",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "2e7e45655fe0cdcc2ff0eb01291b1001d2fd9c689496a85ff408bba9376ebb9e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000228",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "2fd160dd745d2533bd8cfb32b9909bd746579e0e67e41b338955391a57e635ed"
+    },
+    {
+      "candidate_id": "NEW-DESC-000229",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "306f98953f90138ec8d2b70336cb3b4c9feba021a087f35c0accf635230a9a18"
+    },
+    {
+      "candidate_id": "NEW-DESC-000230",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "3088ee1b8a2d77f38f956920962586d35aabf3901a4dc295968a4a05cc49e0de"
+    },
+    {
+      "candidate_id": "NEW-DESC-000231",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "30c184181fb5e37be53362c7ad768a99607202409067fdb1e20ad0850f47a7b2"
+    },
+    {
+      "candidate_id": "NEW-DESC-000233",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "34738b17abfefb4f0581d66dc99165a306739df04f408383c08833d117a4db8b"
+    },
+    {
+      "candidate_id": "NEW-DESC-000234",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "35d4149843ff16015eda0a6f63f55f566da36e0efe7f85aef190285922d5fee1"
+    },
+    {
+      "candidate_id": "NEW-DESC-000235",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "35e4505050abfd0ab0c64aa98b89e11e8718a84d3306d99057fe2a521924c622"
+    },
+    {
+      "candidate_id": "NEW-DESC-000236",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "3674d55c8fb896de1c2158aec151130e42361bfbc3c5341609925533ff07a456"
+    },
+    {
+      "candidate_id": "NEW-DESC-000237",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "37a46d60c7419cbf434853e87d5d7ec5b40c811d9845d053e0a940cfe32f300f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000238",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "38c293599c990bb5bac1daeb2df98288f053e584cfe2f41322424a22dc99d4e8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000240",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "39562aecf55b5a208870867be84525277ba1a8e49fcfce592ea280e2ba61d16d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000241",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "3acdd57164e2e9152c5fe10b0eb51dad1afd885d8ba08c4d29309119d9a10b0b"
+    },
+    {
+      "candidate_id": "NEW-DESC-000242",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "3b08d032bb38257b6144941b0ede5990881baef168ae7432c17957dfced297ba"
+    },
+    {
+      "candidate_id": "NEW-DESC-000246",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "3c977efb4c9472fe9a939dec8afb2f0d120df1347ecbc25b8dfcc76ea8d87643"
+    },
+    {
+      "candidate_id": "NEW-DESC-000248",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "40219fdf80d856ed854903239ec6a4b407c1b63dd9b55ba173389eeacf8ce886"
+    },
+    {
+      "candidate_id": "NEW-DESC-000249",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "4043449c73ba240e83ce4fa6f4b5b6091db56d9e5fbabc8341eff280743e2f42"
+    },
+    {
+      "candidate_id": "NEW-DESC-000253",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "427c79ae4c7307ee5db0f828e87e718dabe02d46606f117ccc31928a8e30271f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000254",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "44080b575bd8273e4169f41c65350406b8f466b6961ad1b1410c06e0d693c522"
+    },
+    {
+      "candidate_id": "NEW-DESC-000255",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "44092bf66c47cc67f606ded5f7388b058777466e4e88e29c1eabe8a59fea6d1d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000258",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "45b7421781e133f4243812c53151281d174b2032f16aa573648c42a108207e65"
+    },
+    {
+      "candidate_id": "NEW-DESC-000259",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "45d1bcc920fdb12b401ce9752a5a60b694778c4b8cb424d019a8523c3559ffc5"
+    },
+    {
+      "candidate_id": "NEW-DESC-000261",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "45f56467b071ba2e462fc1c61c80d48ea42a4981b7781d26d092a3434fa3873c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000262",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "470fffe8a80b22bbfa1f0badfcdda7c0e87a44e12479cb2e1c1ec480effc7eba"
+    },
+    {
+      "candidate_id": "NEW-DESC-000263",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "48093a86bd40ca4a5e6ef9c8349e10ae477b1a17d6acc38386a5b24d43860c70"
+    },
+    {
+      "candidate_id": "NEW-DESC-000265",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "48c1b8d42dbdb0df00aad27b43886e24647d1a52e3f0168988051557bcb7be49"
+    },
+    {
+      "candidate_id": "NEW-DESC-000267",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "4b422c400e070ef9087a7743ecdb70ce4caa4ee44bb786e367f675456afcf8c1"
+    },
+    {
+      "candidate_id": "NEW-DESC-000271",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "4d366802ac21b7877892674d41ced1e4a960ce72c5b684053fdfdd73c8e00c77"
+    },
+    {
+      "candidate_id": "NEW-DESC-000272",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "4d4bbbb820ed8218206b5afb6db8704427f981041e6dd883d27e5a68c62a1c6f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000273",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "4f19420e8106919d13e777f328ed4c30a3da1bb0948f30a4683da8d50858e9b5"
+    },
+    {
+      "candidate_id": "NEW-DESC-000276",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "50b2055b279e271b84af903353a6184beb1c8f73d0da6bf1c31b50365037f3d8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000278",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "52bf6c621331634938f42663d58ccb2f6563ec7a08932d2d344125709dfb2330"
+    },
+    {
+      "candidate_id": "NEW-DESC-000279",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "5635fcbd5d0f8009dfb7fbb76ab6297b977bc9ce297c7eee2545698802afc6d7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000281",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "575b4e55b2e0dcb5335988bfd4f05f88e340fbd6e6d7b3b8daa25ee97de4bfe5"
+    },
+    {
+      "candidate_id": "NEW-DESC-000282",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "590d86a883f99058567bbe317420503feb19c3ed2ce00648e4d915750d7497b3"
+    },
+    {
+      "candidate_id": "NEW-DESC-000283",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "59b73de4847d758a85c983eb5c3a374135fffa2e7f47f634b6954ea07159ad5f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000284",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "5c90608bedba10dae5a2f787bdc95b509f32ac62f79d88e49155c764130b3879"
+    },
+    {
+      "candidate_id": "NEW-DESC-000285",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "5d51abfc2c2d993a2c55d8862b70350c07372c8f2722c7597b7c7e54d30d6fb3"
+    },
+    {
+      "candidate_id": "NEW-DESC-000286",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "5d9f0c5910c49961e5077cbb25a408907caf6537ed3f49f8fef4189e09175c66"
+    },
+    {
+      "candidate_id": "NEW-DESC-000287",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "5dddafc6c0b76afefa29fe39d66a7f3bc4c01379f0ce4da76bec6395de0babf7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000289",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "5e42a6898f00faae23aa546c51cfe186d38c0bf24f3d442f212c1f71d80520c1"
+    },
+    {
+      "candidate_id": "NEW-DESC-000290",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "5f0aaa6acf5e82ad523c505e9e1f3e90f8b429a2100e110595b08acc361ba381"
+    },
+    {
+      "candidate_id": "NEW-DESC-000291",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "5f3b99f9a7d3ce7bf9680dfcbe561982be77a19147ae0235f5ff4f3860667a73"
+    },
+    {
+      "candidate_id": "NEW-DESC-000292",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "5fbd3f04b3741d8a08b6fe368ba038bce01a3264a086e5f9f9ca8f5583fb75d3"
+    },
+    {
+      "candidate_id": "NEW-DESC-000293",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6017e90694e6bf574dcb4871cd0bc6f0f11a3c6b42a227742b2d5f9555a24cb5"
+    },
+    {
+      "candidate_id": "NEW-DESC-000294",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6045371c1d690cbd7f364ef43f3852d6493ee1f8991f4f5b8095c9fbbf1e6647"
+    },
+    {
+      "candidate_id": "NEW-DESC-000295",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6056fe8c1ee144d7c56f625c267b85d4efe49060501e53652ba077cbd812f3a8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000296",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6138f965fe85d29c7b28b59e62f00bfa2bfe58f6b8874119f8e9b25dbf902326"
+    },
+    {
+      "candidate_id": "NEW-DESC-000297",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "615cbeb286d2af15b3d90ead5923d17458399cf8c8491c44e401a7a83cbe6767"
+    },
+    {
+      "candidate_id": "NEW-DESC-000298",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6242a0b01eb363493925af845e4b673ed095cab8e52f7cc77294bd5b8829ab00"
+    },
+    {
+      "candidate_id": "NEW-DESC-000299",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "627174690a19490891a084430602641938b47cde3d715ca59e1c82476bea1430"
+    },
+    {
+      "candidate_id": "NEW-DESC-000300",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "62e8317ab18b8f95e86344f5ae470c612604896a263c145ba211c2dd6f285b87"
+    },
+    {
+      "candidate_id": "NEW-DESC-000303",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "63ab262200d574ccaf5a1b546114fd2bd9272e0a36a3653bef2f8b008043db3f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000304",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "64e057644a4b1a30526593c4cdac756df12d5a2365dbdf1675929e8d94c0db68"
+    },
+    {
+      "candidate_id": "NEW-DESC-000305",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "655796718f2882b5e45905f0834d39bf9d434d0e9d5793e53bc7ceee75df2bfc"
+    },
+    {
+      "candidate_id": "NEW-DESC-000306",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6587139390b9426bbc8ff780f9a0db73738229125e797ae293c8e80640dee344"
+    },
+    {
+      "candidate_id": "NEW-DESC-000307",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "65c2226252fae3d362aba8606b5d77ec1c1b02c72aad0ca1427a1b2ceddda8d9"
+    },
+    {
+      "candidate_id": "NEW-DESC-000308",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "661806bb57bb7435ab81373be1c6e211e3e92e934454505c903f1f2b2f9b8447"
+    },
+    {
+      "candidate_id": "NEW-DESC-000311",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "67240de5aa393ddad5d40d0ee12fb751f5668581d76026597bfc5d08a250eb54"
+    },
+    {
+      "candidate_id": "NEW-DESC-000312",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "678c159864c039b111bf9931316935d468c1db20fd1476600af94306b81b30c8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000313",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "69415250a6db681e0285cca75b3d85fbf1a0930d4bd6d1e4099756fae1b71563"
+    },
+    {
+      "candidate_id": "NEW-DESC-000315",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6b292d62fb0e4361a0ae64c869d3ab15e7b1a3421c04659aa810c35ff1ecd07b"
+    },
+    {
+      "candidate_id": "NEW-DESC-000317",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6ba17de6a1af0878eb69828f632722895f0ddc94a9fa4585615907e3c9a68b64"
+    },
+    {
+      "candidate_id": "NEW-DESC-000318",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6bd30a05277e6cd1379fded231c27eaf2dfbc245f2b834cc69f74ddc81242b9d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000320",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6db748720745d74b13d2c404765cdd8cdd064e88e27d1cbf04fdfe23dbccf8da"
+    },
+    {
+      "candidate_id": "NEW-DESC-000321",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6db985a0d091d537af603a4527f763621e28d7d41bbe678e45b2b27992f697b6"
+    },
+    {
+      "candidate_id": "NEW-DESC-000322",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6e30c39d1299566ec39911a5e136d91655d6c339a30977ad6ff0cb5e46d7b394"
+    },
+    {
+      "candidate_id": "NEW-DESC-000323",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6e78ca170b20529f3be40d992f5229091677cb22fe0aae6fdf5444747fb1aad0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000324",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6ec660f4cc2f78ecf56cf471a4bf385eea2be089dc1ff55fddc985e180cbaece"
+    },
+    {
+      "candidate_id": "NEW-DESC-000326",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "6fe2d00b4bfb3c17dbd713874f25fe436a5b038092bb264714a75c9470d6f02c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000327",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "70c865e98685481054e16ca9802e69055f8347d2ae84ac670368ff633dfba96b"
+    },
+    {
+      "candidate_id": "NEW-DESC-000329",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "71df18ffed052e6fce7e696bc1bd73e2af811039cc412fae57de377f8632a2f1"
+    },
+    {
+      "candidate_id": "NEW-DESC-000330",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "72939d28d2e56919b61c7b67edb23fb2057469691679679016600147fe6535d5"
+    },
+    {
+      "candidate_id": "NEW-DESC-000331",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "737ce9af96aac7eb7470d564dc68fea96776e1320548ad2d32bc567f6cc4cd85"
+    },
+    {
+      "candidate_id": "NEW-DESC-000332",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "73942551e9fb1bc6a04b64a6f099a925befbd92af7362e04a3817e6f1b26c7e0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000333",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "75972f8df7a75ea45d7911ada5449187d4380c36560f9fdd5c922628136f61b8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000334",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "76b3468467951597e7199ef7d56faafab08d5ff967d37163772860da01ca9b96"
+    },
+    {
+      "candidate_id": "NEW-DESC-000335",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "76f7efefbdb7cb3a6b74c43afca0ed6b689a0d2301c93db04a461aec42446315"
+    },
+    {
+      "candidate_id": "NEW-DESC-000336",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "78c0c4984616c9649bf09d23ea599a7df59a4805c09a69b9f735652dfb966b0a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000337",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "78c78d773ce482f91bf57a9fe053558189a91081c58099f6d55e3e8587b361c0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000339",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "7ab2cb4c8724646ae691d6f48f29d82ac9517bb422dd6e651b89ef5514223179"
+    },
+    {
+      "candidate_id": "NEW-DESC-000340",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "7b3acbf3e01119eef4d8e6bc9e884fec6435e5784cb941d325458a0dbf738bd8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000341",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "7cbf776a984174f788574a7fdb295b7fd5909b481bccd5ed7533280e0d1d4e68"
+    },
+    {
+      "candidate_id": "NEW-DESC-000342",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "7d5419dd89f060112bfff1a5a7aaa5a8c887ca00a39e4a8a4bd0702156491434"
+    },
+    {
+      "candidate_id": "NEW-DESC-000343",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "7dcbb2536f30b60c8611345895ecae2a9aa959aaa2ab3a8d5bb5bbad743f3ed8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000344",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "7e1b03fd67fc03a1a65749035abb185f81f3d8af7ef3e7cc3737b67ba1329363"
+    },
+    {
+      "candidate_id": "NEW-DESC-000345",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "7ef1dc2522e79984a73f9bae2c8df2fbf36d0fe7368e9712ebb64a34f6221936"
+    },
+    {
+      "candidate_id": "NEW-DESC-000348",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "81803bf8741596d6d894a130e22bfd5479b9b97c097fd266a00dc415ccb43523"
+    },
+    {
+      "candidate_id": "NEW-DESC-000349",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "820ff6f0b244da90cd45f1f2042c3ccbdcb9619e6e6787adae89f5ae64c4d3d5"
+    },
+    {
+      "candidate_id": "NEW-DESC-000352",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "82ed872fa21c313b50127755ee1b5e8945e31d3f920b850aa27b6715feeb5dbb"
+    },
+    {
+      "candidate_id": "NEW-DESC-000353",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "836e8f5e92e11f603e9177bcb77445f89ab84d2570622f43de6c61a30cc90692"
+    },
+    {
+      "candidate_id": "NEW-DESC-000354",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "83e4712452f1bb9671fba03140e864a406e12d2fb0484c37c4826e8fe2e5c383"
+    },
+    {
+      "candidate_id": "NEW-DESC-000355",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "84a45500b650e06fcd836a1c4e9b176ef55c7b667faa820a49a5e9a16531770a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000356",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "8548e8212df503b11448fdee58fd8278a51afb50009b420186fad4af5d886153"
+    },
+    {
+      "candidate_id": "NEW-DESC-000358",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "86ba3f1f26d6b41461f87053ce12662880ad94db9a37b0d0c9830c85bbf7aa0f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000359",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "86fe67a4d8fa70f8ef95f7ccf93613822b15c0d1b4e4172de631ee8138fd9076"
+    },
+    {
+      "candidate_id": "NEW-DESC-000360",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "87acd224038e74df1e893a4df572a01b1775ae548dc00ef274fa373ee7f2c4c7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000361",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "889ed9c0543b54ccf45dc93ba814222e2b2b73e04d57e3d945cf002bdd3f55c7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000362",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "88d98957f647844fd655ca8ad05a0368eb44658e05d76fcc94dfeb2bcc595f76"
+    },
+    {
+      "candidate_id": "NEW-DESC-000364",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "893a688a58ea3a156d0b2359ae337618fd976e23cad391f8d7bb39e8f81f415c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000365",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "8acabca9cb0db32c5f1f5f28f1c534c2c4e0f39e6a7457642266e86b055c4197"
+    },
+    {
+      "candidate_id": "NEW-DESC-000366",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "8ad7ffc2329cb46fc4bb5485c7d452abf313b372fc85ce723fde6d8e15f1c507"
+    },
+    {
+      "candidate_id": "NEW-DESC-000369",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "8c336b9dce7ff691a898a2d81f5f2287776db9736374f973d44397bb5ead90b2"
+    },
+    {
+      "candidate_id": "NEW-DESC-000370",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "8eafe9ab2d1e439a19f5bd6493bb346fff70a496ad4e254648246e39bd4e1495"
+    },
+    {
+      "candidate_id": "NEW-DESC-000372",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "8fe29ee21c90001bc78617cbeb1edfdeecaaed8d1fcb6f16633f080d6a82b516"
+    },
+    {
+      "candidate_id": "NEW-DESC-000374",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "90c6718a52b311ef5349db3a3a77d6397823442011cd4c9c32fba768be296dcb"
+    },
+    {
+      "candidate_id": "NEW-DESC-000375",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "913c482dd4f5ab82915a7cc677d61af6db32061c9a9ef72bd26c60c8af1c96f9"
+    },
+    {
+      "candidate_id": "NEW-DESC-000376",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9142ee4dc2c4bc5ada9f4f6d477ad359228a8d740daf28bfb349b31dbb89d2eb"
+    },
+    {
+      "candidate_id": "NEW-DESC-000377",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "91562dd3112d65b96df347c4f7a12e491a8c01501b284f6038ad10c56a6bcdc9"
+    },
+    {
+      "candidate_id": "NEW-DESC-000378",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "920249d80accff99f4dc5cdc2b2d2754ba44d461a55e18435983565d6e08301f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000379",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9224c82d3f1edf9d0d6970836bad03f108949e5f3ee7acf30bb2ac700e1f7730"
+    },
+    {
+      "candidate_id": "NEW-DESC-000380",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9346cff505f4fc4f2a59944360938ad1b908c58ebb75a3c05858d9673d4efca5"
+    },
+    {
+      "candidate_id": "NEW-DESC-000381",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9380eae864a0e3455ac00194b5457ad0e1bdbe63ec69e9d34b70d2e850be1718"
+    },
+    {
+      "candidate_id": "NEW-DESC-000382",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "941a1523cca182e3d12a4ef806433842835bfee272fd567afeae2d08de869e34"
+    },
+    {
+      "candidate_id": "NEW-DESC-000383",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "94cac507a9c2bd6ed17e0c6ea95ac0884b398b035e0c0eecd0458927a5f946cf"
+    },
+    {
+      "candidate_id": "NEW-DESC-000384",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9650990b367d5f4176a01f9571e4854f64e5f2d4416ae95da9c9aca6d6a72a87"
+    },
+    {
+      "candidate_id": "NEW-DESC-000385",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "968fae30440efbe0dcced8288683d6693b9d57f1d15ce95a3f12837a9cfcdf13"
+    },
+    {
+      "candidate_id": "NEW-DESC-000387",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "976ed9a99615c60b58949e2eff2dc520aead78d38d189aed6c708a9d4b881910"
+    },
+    {
+      "candidate_id": "NEW-DESC-000388",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "97fb522a91997bf04816551fdbf1564e1f146ebb0362ce4f40d0b3722ffb0c13"
+    },
+    {
+      "candidate_id": "NEW-DESC-000389",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9a08050d67df89825990eabda11d06023bf999a6babee25f3ba81a6b26285039"
+    },
+    {
+      "candidate_id": "NEW-DESC-000390",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9a1ce164be6b4eb0ab56f1b83b978c3addd9d5f2e0a1d61f16f6180c09dfdbbb"
+    },
+    {
+      "candidate_id": "NEW-DESC-000391",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9a619b9d825afb987871797015a3caa369f914ff8beabc23c0b538adb7e8fcec"
+    },
+    {
+      "candidate_id": "NEW-DESC-000393",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9aeb23a0add8e7a6f374e013dac3dcedd943d7009e57f56e4df40cfc9a3478a3"
+    },
+    {
+      "candidate_id": "NEW-DESC-000394",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9b282e5dd3ab969aa4e0ff7de90583ad1231b51622dc981d6087924ee153dfe0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000397",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9be63075c3615c7046f25a12442b2a9729aaaa4ef8ab7031c77ae4789f732158"
+    },
+    {
+      "candidate_id": "NEW-DESC-000398",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9bf082470e5bc41cd7d00a63fd023a605694e5676c2fcaa9d8808f026fa24201"
+    },
+    {
+      "candidate_id": "NEW-DESC-000400",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9d02cf33744e067b71b586f4a93ae3eee2ff8f64ce2527456bfc510532e113f9"
+    },
+    {
+      "candidate_id": "NEW-DESC-000402",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9e44da5b87c8fa5e54ba30e0ede224e15bf7bb7c5baca18f95b8a802232be73f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000403",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9e567697f257f936eb84583c53cb777450ed19c4d256311e9a84fcef5c1546c8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000404",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9e92156fa5642c81c8839624b57e9996bc5ee072ef3452556869010a4771521d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000405",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9fada3b8aebdf976e39a9eb53082d943aa53885024f8c40181aad77ff1754cae"
+    },
+    {
+      "candidate_id": "NEW-DESC-000406",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "9ff3929e82d72c4a30b469215f80087fb2d88df6c707f1ad29298a3f737fca59"
+    },
+    {
+      "candidate_id": "NEW-DESC-000407",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a0610d33db6c234075719f0b50a9b9c5a30a33a2232a53ae98f52b03d9ded132"
+    },
+    {
+      "candidate_id": "NEW-DESC-000408",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a08809289f928f61d2e176f0a8c905b94cf49991885cf776665a649e84d9100e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000411",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a52306cea750937bf44ad00b3c633ceb89316b480498a16ad6312440b9f2eca1"
+    },
+    {
+      "candidate_id": "NEW-DESC-000412",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a596f53621de227faa4ad204a25d459e91d575dec4e62ea82b18f0047335eb5c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000415",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a61891a9a3c823fd015ca328492ad15727064afa1f5562a790fc6382406beaf7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000416",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a640fcb26bd1d09043e5e6cca024fb4a7e7f84fb30b5aaaed23a3259f4a1e661"
+    },
+    {
+      "candidate_id": "NEW-DESC-000417",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a69d68ff829b7fc9fa75b038f8716e4da22b1651e8fa53e25dfe32ca68f2907d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000418",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a6c89bb3e327b9f20fe9df18580bf9078d5bc574b5e9a641c21550109bd6c742"
+    },
+    {
+      "candidate_id": "NEW-DESC-000419",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a7ab7ddced7a0404a40fb3d32333aede4e3cecd27fcc62b37660eaf82b86bb93"
+    },
+    {
+      "candidate_id": "NEW-DESC-000420",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a7f51c324dd0b5480f9b827f0e076dec92dd635749c5ad95ff5a595c969d1538"
+    },
+    {
+      "candidate_id": "NEW-DESC-000422",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a889da161ea80a6d8c7ff343dfc1f9aea3812a6371fe3f334c11234aed6633bb"
+    },
+    {
+      "candidate_id": "NEW-DESC-000423",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a8af76e2f7666ad823f9bc387c2622b6181518ee87b57bdf5f874cc271383bdc"
+    },
+    {
+      "candidate_id": "NEW-DESC-000424",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a91076ce30a548e8632c7e4306b542781c7053ef580e909b4a88099e85fc850d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000425",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a97d07dc8c507442753dfd949fac3d86b73e149a8720813c24b5354ea5312570"
+    },
+    {
+      "candidate_id": "NEW-DESC-000427",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a9a9a43418528040369f8a6a516f7c764a4b634a7858df0ce27ff5550ddb47ef"
+    },
+    {
+      "candidate_id": "NEW-DESC-000429",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "a9d4b2fe5bdc256924b94fb60ae9c88c435f2228785816bbfe62eff2ee2e03f4"
+    },
+    {
+      "candidate_id": "NEW-DESC-000431",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "acceb7ca5a1e4c6669d26f481a3ee3847e0673416b066b400c826708c663f2ff"
+    },
+    {
+      "candidate_id": "NEW-DESC-000433",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "adb528f7627a31ba4616d2a165f219949556e28d407fea2144be9da331b3559a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000434",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "add7734beb74adbe87c07fd58033a14f8592e7b16c82c281f579f86748741659"
+    },
+    {
+      "candidate_id": "NEW-DESC-000435",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "addf0c4ef6c79641f1c541a180b5b28a01fb1b5163eca8349999c2a0e27b9d85"
+    },
+    {
+      "candidate_id": "NEW-DESC-000436",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "ae28b5b2ce3c19dce579183c2c9f22f9e622d9dfff7ba70ebeea665023f27d73"
+    },
+    {
+      "candidate_id": "NEW-DESC-000437",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "af7f894e111d315711260e75ba78d539bce488086a7b519093c30e78804ac9b7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000438",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "af8e2c1ffb74300ca8b59f3cfc663def6f87de5f7142a9be703847373629bfa8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000440",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b027487e326f4ad1281ef6447622e1b18375af446d350a8dd3dd978d98566a17"
+    },
+    {
+      "candidate_id": "NEW-DESC-000441",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b0d0390d8afdca5a6eae496b1e246aec3eb7b101b7e04a6c27c7c18370ad745a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000443",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b1555dd15c5c94d9588faf6b5d0b5d88e4029c03c780f1bb52d368ed7453e945"
+    },
+    {
+      "candidate_id": "NEW-DESC-000444",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b16c6cd46c281ad9e98c4fb188fc2651bbeec749f285099f35a0495c017ea98b"
+    },
+    {
+      "candidate_id": "NEW-DESC-000445",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b190c0e518e45fe88d95746cebe3a2f1f96bffa1ee959f7e3715e890876c5154"
+    },
+    {
+      "candidate_id": "NEW-DESC-000446",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b19da391fedbb9dedda79ebb8da15caa5f3c88e0064ebead9c56628e6546af8e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000447",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b2c749d5063eb70214c12a7914fd228836a4c77a21bdff40a0692a56c0053f4c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000448",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b424d1456b81fbc8cbecf2fc1d4f1139b4c3742f1d9115c774b87e953aa536d6"
+    },
+    {
+      "candidate_id": "NEW-DESC-000449",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b47c57f13d05c121f8161d0402d809631f76b721d5250378dc41864680b22723"
+    },
+    {
+      "candidate_id": "NEW-DESC-000450",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b4cd781af232bd22774599c8cb702d122506d1a09c892c6dfe077560bf2e8748"
+    },
+    {
+      "candidate_id": "NEW-DESC-000451",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b5d3e27ee7627ad5d0407112be06f9f33aeef2db12d892f079e1e5c0d94d7887"
+    },
+    {
+      "candidate_id": "NEW-DESC-000452",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b6c328747071ee71845b2d425028803967602369cd29cde135a2373dad53893b"
+    },
+    {
+      "candidate_id": "NEW-DESC-000453",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b7ec474915f95905dadb89de08ce940cae19cca6663d73f03b840f06568d71dc"
+    },
+    {
+      "candidate_id": "NEW-DESC-000454",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b8d4d901f52c2b205da06e81b1db22566f5849b61479eed0e23c51054a01670e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000455",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b958269c59b4a22b368a01efe29d5941890f73421b75d37e326c532507059041"
+    },
+    {
+      "candidate_id": "NEW-DESC-000456",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "b99871c13a52bc7974d73b57469f95c3ecb16ce4343fdd90aefdb5aa65aff764"
+    },
+    {
+      "candidate_id": "NEW-DESC-000457",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "baa0e362848ded83eac28a873e5db7ce66082c58f6a5c91daf3835db8a201a58"
+    },
+    {
+      "candidate_id": "NEW-DESC-000459",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "bc00398529e727597954ab55c5d23ee59950241d56b631d0c49562171100ca52"
+    },
+    {
+      "candidate_id": "NEW-DESC-000460",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "bc74dd2cfeaf082cd15ab46fa9acd00eb686559bf4a08d73a21e65345ded6c53"
+    },
+    {
+      "candidate_id": "NEW-DESC-000461",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "bd25fd63c828b38e8e5847750d22c435df4bfcfb841f76c091c446b7db9fa96b"
+    },
+    {
+      "candidate_id": "NEW-DESC-000462",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "bd82577e42135b1d327c80b3ac2716a5c6fb267d07d2589bfbebd7634c847658"
+    },
+    {
+      "candidate_id": "NEW-DESC-000464",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "bef48fd51d1e4fee9ad3ec1206cd72396e496b9018102fae6e0661057350f4b4"
+    },
+    {
+      "candidate_id": "NEW-DESC-000465",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "bf67e9426103f90b115599011bf6cc0e809851394c84def4bb6e1f4d7736a666"
+    },
+    {
+      "candidate_id": "NEW-DESC-000466",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "bf7c7a062bb9585875422ad8a0766de6801e1cd987871c0a5a74f66d62d19cdd"
+    },
+    {
+      "candidate_id": "NEW-DESC-000467",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "c0377e0a01e3a5b1894c600e6b8a0bb376f12e316480a521604fa989b58eed56"
+    },
+    {
+      "candidate_id": "NEW-DESC-000468",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "c091c658db47d1db70e14c0afec150ecb1f5479d4a0faff708e22c049bcc8090"
+    },
+    {
+      "candidate_id": "NEW-DESC-000469",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "c0abb9ab32a866e3457d4be33f4a37d7c20e80aad6f181f07bbdc7e7d1cc6041"
+    },
+    {
+      "candidate_id": "NEW-DESC-000470",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "c16ab85daff2eada7a5c699d24b3369ba32323db12c3de078058f0379b2703cb"
+    },
+    {
+      "candidate_id": "NEW-DESC-000471",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "c19f8154afbca951e4374966253e7f160f16a05cbab219253a54977d0c0a03ec"
+    },
+    {
+      "candidate_id": "NEW-DESC-000473",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "c2bc3bc91067b4e0c4a0bf96968afba939b96e82f09f3f13979c933151707e94"
+    },
+    {
+      "candidate_id": "NEW-DESC-000475",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "c5381415b3925c3b8d8ee2a6eda204e3e3feb689063cdc9a48787cd2ced0394f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000476",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "c5602932b48f6175f475fb3337a9bc58ff38eb86a49f7e78e76237aa065473db"
+    },
+    {
+      "candidate_id": "NEW-DESC-000477",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "c8e1f5ac806e282e32f86242637667d78d72b6d68154abfb536dcb93c0ba99f9"
+    },
+    {
+      "candidate_id": "NEW-DESC-000479",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "ca4ba0b5aed7a8c3c8863e26477968969cee78dd25ebecbfbc025d9fcdb48b6a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000482",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "cb6f4f7d44d82d9a76beaf435e9dd906c01a1b6e43df07d49136e6a2d7d66b5f"
+    },
+    {
+      "candidate_id": "NEW-DESC-000483",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "cbba7bb88b48f278840d662306c77516510528b241b73ae3f473ae4d5ec212b0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000485",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "cc1ddc1429b9124fbe3ce217c6de0824ee19edea875603565cdb4672950f3bb0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000486",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "cc57375dd928b39f098031e0e2285d52314037761425aae35161b9de3aa75b25"
+    },
+    {
+      "candidate_id": "NEW-DESC-000487",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "ccb691887bf6b9eadbc5d44721d75ddd54ec6f8cc3e9ea9fd6ddb32c13320da3"
+    },
+    {
+      "candidate_id": "NEW-DESC-000488",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "ccc9b7a62ef848308f3c56f861433c952799e920e755d7322c8912f55430c802"
+    },
+    {
+      "candidate_id": "NEW-DESC-000489",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "cee6e126bce69deb8c1ae64d891628ccac31b58e15a251dd8990fb34dcb26bdc"
+    },
+    {
+      "candidate_id": "NEW-DESC-000492",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "d09e5979ec93131f50ec92690b5a16125f4f96cf9bfa1f6e2887d25218588333"
+    },
+    {
+      "candidate_id": "NEW-DESC-000493",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "d0be0e06e265414a1bbc3c2bcf69fcbcb858fb5e2b02ad649ffd807dfe173b80"
+    },
+    {
+      "candidate_id": "NEW-DESC-000495",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "d201cdebba2394548bfeca202ced8a9794ca9bc98b9b672236bcddb5dbff3acb"
+    },
+    {
+      "candidate_id": "NEW-DESC-000496",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "d2f6fbd26cf59ad0ee91a57a5ab5af8b00ac9fe4e6351af271e9fa79f051bda7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000497",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "d30f3169925f2884b1f4452e77f4aa4acd89e5118e2a863a6fce907d9cf4890d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000498",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "d5fb4462521a686096eb0bb58f13a1af2dfd849f3a07a3e90a823a42b18f3a47"
+    },
+    {
+      "candidate_id": "NEW-DESC-000499",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "d60f6a4c6d14f10c20cbcd285fec6ee0573ea2f9451c60ed673b472bb2b02bf9"
+    },
+    {
+      "candidate_id": "NEW-DESC-000501",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "d85d7013ca528b2f6b0921e518d1455bfa8cd8d3856073b896255acdff837822"
+    },
+    {
+      "candidate_id": "NEW-DESC-000502",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "d8d74da96bc4e2750bdb921cecf643287903cf92f8b2fd7fcd3777e9608d3927"
+    },
+    {
+      "candidate_id": "NEW-DESC-000503",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "d8fffac231bf005cb745d1755e41fa4c4ca12ab63d259539569fbe42ada36cae"
+    },
+    {
+      "candidate_id": "NEW-DESC-000505",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "da2e01f3b636b143356be3f5fa7d1c4e8d569eec32104888be5d832b7a05ed07"
+    },
+    {
+      "candidate_id": "NEW-DESC-000506",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "da5c25a62cb777a59a0a172cedd270532aaf6ff3a895876b2ede39124fb482e3"
+    },
+    {
+      "candidate_id": "NEW-DESC-000508",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "dba37385732cb3fcac5974bb8c36f037d384a1474a667877e640faa6a1195d2a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000511",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "dc80d41c38ab380653fd3d3e4baff4509abe1f96a4cddff03c6c8bce0acfb103"
+    },
+    {
+      "candidate_id": "NEW-DESC-000512",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "dd140e51bf5e0f135a2bd06361086292ccff2be115a636f953af2ff3a56f6b7d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000513",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "dd21db76f9e1dd78f03c3b3ae11656864492b2471047aa05d08a3b77d7011b3e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000514",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "ddd428b1196072d324ece5912137e44f01e649c32f1d5e3983fcd1265210dafb"
+    },
+    {
+      "candidate_id": "NEW-DESC-000515",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "de07a2a9e44924d163053f2be641ad0348ea455ffb9b43c7258a3afcc69f92d1"
+    },
+    {
+      "candidate_id": "NEW-DESC-000518",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e000474505a26d9565d0f880991608858087fe83f63cefadbdeb15bd6493fc00"
+    },
+    {
+      "candidate_id": "NEW-DESC-000519",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e026b0a0eee188697195e9223dc2f36f5e52bc086d6a9442f38ee155517fff9d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000520",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e0d3e16ae4edd647a3faa97b9beb4d48238dc6310a5ad1c91d2b624deb667b2c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000521",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e176a6c0eb156ccf45656b52490ca9c8b6212105c26d0060faeae8d033da25a2"
+    },
+    {
+      "candidate_id": "NEW-DESC-000523",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e19951e7a9b5bc0402647abd441623ce883c5051ce98dedeb8f29e365b98814e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000524",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e223b03d88bffe7d24a8e13af40e5904dd66d70bb977ff1dbb36d3a045cdf6e8"
+    },
+    {
+      "candidate_id": "NEW-DESC-000525",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e29b6ce68da06de099e1a95c59caa6388260152c0cf5c699a196ead9dec8e29d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000526",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e2cf0c7bdc8b97948df1c185684b99f9199f1b5ab976f56437dc3ca08d6576b6"
+    },
+    {
+      "candidate_id": "NEW-DESC-000527",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e317ba997e393bea98b98a41cd28e821efb6b9316b7771818b94bb50f48f8f60"
+    },
+    {
+      "candidate_id": "NEW-DESC-000528",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e33666ff8c781244042363d0a76c01d8e6187b55448a6039a2469b845ea101b1"
+    },
+    {
+      "candidate_id": "NEW-DESC-000530",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e36b18e7a24a6fe6391b108270f3ff09beb187296a6c9e2eb5216f220163078b"
+    },
+    {
+      "candidate_id": "NEW-DESC-000531",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e5bdcffdb661121745e4fbec4bfa3561cb883e4bdab9a15477653d1221d4304c"
+    },
+    {
+      "candidate_id": "NEW-DESC-000532",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e6ff0e30eb821811a634adeeb99ec2180c48e3124d9c5011f85485aaac9402fa"
+    },
+    {
+      "candidate_id": "NEW-DESC-000533",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e70a1f456247132df70ae15cb993e68f6b4d109411246404a021c18f952a7826"
+    },
+    {
+      "candidate_id": "NEW-DESC-000535",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "e8285b2b2d4ed2f7f7fc1b57c0b6d35a9215681c0bba3777da0d87bf6065d4de"
+    },
+    {
+      "candidate_id": "NEW-DESC-000537",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "ea29548aeb4c723844cce56e916771f53ac917e35e2fad1eecc2100054705b42"
+    },
+    {
+      "candidate_id": "NEW-DESC-000538",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "eaaf01b577f0365986960f76b0b93d33327ec6fbb80b3da843678913d132a981"
+    },
+    {
+      "candidate_id": "NEW-DESC-000540",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "eb995054b8f350ebfabae8c3d968467067d762b512fda9df5d1285c10f477ed0"
+    },
+    {
+      "candidate_id": "NEW-DESC-000541",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "ec0d2af48d806526db9cab800b89f132168b33160278ca8b31721ae9d36d3c80"
+    },
+    {
+      "candidate_id": "NEW-DESC-000545",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f024e116ad84a9f639199852fc31e7061f24284b1d129d06b02cdb2a02d4c98d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000546",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f089e96066d4da61225413471e3adc726ff1a434d35ab65969c6b51a5d83894e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000547",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f098df31741c3c6a1065bbfc70c2ffd951922f528cf12040decd4baf686fcc6a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000548",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f23f5415cfe99f10cc51f5720ce263e7aaf414ad439c878afd50bf85c04022a7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000549",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f2671c638cea777ae234a0ca0987072695d8aa49a042e1a687503d18990abc59"
+    },
+    {
+      "candidate_id": "NEW-DESC-000550",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f2bd71374dcbb1ab8500817cce315d1dfdcbe43db5794e2592caf76462677201"
+    },
+    {
+      "candidate_id": "NEW-DESC-000552",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f2f6f7c5cdf1ee5f27871a12c9a37d3676a815fbbd854f2235796bc08298defb"
+    },
+    {
+      "candidate_id": "NEW-DESC-000553",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f35a860b950431a1c10b51e06e2628d69a20dd4813e1770a353854db7d011664"
+    },
+    {
+      "candidate_id": "NEW-DESC-000554",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f3c1a29dc2e2727cc2f1e9ec5a19509130dc10ad072970ee3bc43ce8c11f40ee"
+    },
+    {
+      "candidate_id": "NEW-DESC-000556",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f5d946823c4b811d624c8877971b052264ce41dd378859d0ead940dd5965e8af"
+    },
+    {
+      "candidate_id": "NEW-DESC-000557",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f65ac93ececfd56dbfdba126e589a52a54550e1bdb9ed21428f1b5fd8179b8aa"
+    },
+    {
+      "candidate_id": "NEW-DESC-000558",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f683bea41982eae49ecdb8f8d98ca96102ba5c08367fc572833be12fec72aeca"
+    },
+    {
+      "candidate_id": "NEW-DESC-000559",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f792db46ff1295c533810958793beedd096db73e5403c56426e4f152f89004fd"
+    },
+    {
+      "candidate_id": "NEW-DESC-000560",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "f8fa07b3d47847302068c924b25ef9004312fb85a97222fc94444755d590a50d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000562",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "fa34002aaa3a0266d462241350ac30b07cefe12cdec7a2ecdefb0ff1fec5c89a"
+    },
+    {
+      "candidate_id": "NEW-DESC-000564",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "fa570fb92cf2fab09cd967b800402b25681f74ea4eea45126b20ebd3969e071d"
+    },
+    {
+      "candidate_id": "NEW-DESC-000565",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "fabc2300b0ea2d39a93650abcdac8cea707bbcbf67ccaa85d04866ab5cfff4b1"
+    },
+    {
+      "candidate_id": "NEW-DESC-000566",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "fad937ae492eb6f64ed3ce5ace0e790412eb10c99fa9c5e6bd3641ae67a72f22"
+    },
+    {
+      "candidate_id": "NEW-DESC-000567",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "fb9198dcc041e6177d28184b0be5fb18a4474d75341452ca430bd465b1ea222e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000568",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "fbd66b3208bf39265aa604f7bc1c5531c63cc19b16ffccfe4dbd880acb87e1a5"
+    },
+    {
+      "candidate_id": "NEW-DESC-000569",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "fd8cb9e8284386a71dd4c01d010ae114744b4d27b1243e8fe873ca3943174297"
+    },
+    {
+      "candidate_id": "NEW-DESC-000570",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "fe5f27afc63c506c41107f6a8f2319f7d95cb7aee83b5cba75a3380a8ead5bf7"
+    },
+    {
+      "candidate_id": "NEW-DESC-000571",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "fe71285ea36c3f94ca955824555c9e92fe2081442af5c177af795c1d705ac6a5"
+    },
+    {
+      "candidate_id": "NEW-DESC-000572",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "fec407bc315c42573cc4e79665aec9e7e7e9d588e5809a55ab713cfd8fecd29e"
+    },
+    {
+      "candidate_id": "NEW-DESC-000573",
+      "v2_tier": "MEDIUM",
+      "platform": "oliveyoung",
+      "content_sha256": "ffccf222f85ad3553880da56c77ced74bfd072063fc411de43bd149302f87cd2"
+    }
+  ]
+}
