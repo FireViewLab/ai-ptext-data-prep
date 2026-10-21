@@ -34,6 +34,15 @@ def test_identifier_policy_prevents_numeric_dot_zero_and_preserves_strings():
     assert inventory.canonical_identifier("0012345") == "0012345"
 
 
+def test_report_paths_are_repo_relative_or_neutral_placeholders():
+    baseline = inventory.PROJECT_ROOT / "outputs" / "merged_reviews.xlsx"
+    external = inventory.PROJECT_ROOT.parent / "private-export" / "reviews_elevenst.csv"
+    assert inventory.portable_report_path(baseline) == "outputs/merged_reviews.xlsx"
+    assert inventory.portable_report_path(
+        external, "<LOCAL_REVIEW_EXPORT>"
+    ) == "<LOCAL_REVIEW_EXPORT>/reviews_elevenst.csv"
+
+
 def test_duplicate_blank_and_same_review_id_different_product():
     db = connection()
     try:

@@ -1,7 +1,7 @@
 {
   "analysis_type": "read-only inventory and exact overlap; no labels or merge",
   "baseline": {
-    "path": "C:\\Users\\kimha\\Projects\\ai-ptext-data-prep\\outputs\\merged_reviews.xlsx",
+    "path": "outputs/merged_reviews.xlsx",
     "sheet": "Reviews",
     "rows": 8965,
     "header_row": 1,
@@ -112,7 +112,7 @@
   },
   "platforms": {
     "elevenst": {
-      "path": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_elevenst.csv\\reviews_elevenst.csv",
+      "path": "<LOCAL_REVIEW_EXPORT>/reviews_elevenst.csv",
       "columns": [
         "platform",
         "product_id",
@@ -177,7 +177,7 @@
       "new_unique_normalized_contents": 142163
     },
     "kurly": {
-      "path": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_kurly.csv\\reviews_kurly.csv",
+      "path": "<LOCAL_REVIEW_EXPORT>/reviews_kurly.csv",
       "columns": [
         "platform",
         "product_id",
@@ -242,7 +242,7 @@
       "new_unique_normalized_contents": 424161
     },
     "musinsa": {
-      "path": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_musinsa.csv\\reviews_musinsa.csv",
+      "path": "<LOCAL_REVIEW_EXPORT>/reviews_musinsa.csv",
       "columns": [
         "platform",
         "product_id",
@@ -307,7 +307,7 @@
       "new_unique_normalized_contents": 110242
     },
     "naver": {
-      "path": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_naver.csv\\reviews_naver.csv",
+      "path": "<LOCAL_REVIEW_EXPORT>/reviews_naver.csv",
       "columns": [
         "platform",
         "product_id",
@@ -372,7 +372,7 @@
       "new_unique_normalized_contents": 1262
     },
     "ohouse": {
-      "path": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_ohouse.csv\\reviews_ohouse.csv",
+      "path": "<LOCAL_REVIEW_EXPORT>/reviews_ohouse.csv",
       "columns": [
         "platform",
         "product_id",
@@ -437,7 +437,7 @@
       "new_unique_normalized_contents": 6373
     },
     "oliveyoung": {
-      "path": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_oliveyoung.csv\\reviews_oliveyoung.csv",
+      "path": "<LOCAL_REVIEW_EXPORT>/reviews_oliveyoung.csv",
       "columns": [
         "platform",
         "product_id",

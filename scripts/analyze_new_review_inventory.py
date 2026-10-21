@@ -12,6 +12,7 @@ from dataclasses import dataclass, field
 from hashlib import sha256
 import json
 import math
+import os
 from pathlib import Path
 import sqlite3
 import sys
@@ -21,15 +22,27 @@ from inspect_reviews import COLUMNS as BASE_COLUMNS
 from inspect_reviews import PROJECT_ROOT, is_blank, read_reviews
 
 
+DEFAULT_INPUT_ROOT = Path(
+    os.environ.get(
+        "PTEXT_REVIEW_EXPORT_ROOT",
+        str(PROJECT_ROOT / "data" / "review-export"),
+    )
+)
 DEFAULT_INPUTS = {
-    "elevenst": Path(r"C:\Users\kimha\OneDrive\Desktop\review-export-20261017\review-export-20261017\reviews_elevenst.csv\reviews_elevenst.csv"),
-    "kurly": Path(r"C:\Users\kimha\OneDrive\Desktop\review-export-20261017\review-export-20261017\reviews_kurly.csv\reviews_kurly.csv"),
-    "musinsa": Path(r"C:\Users\kimha\OneDrive\Desktop\review-export-20261017\review-export-20261017\reviews_musinsa.csv\reviews_musinsa.csv"),
-    "naver": Path(r"C:\Users\kimha\OneDrive\Desktop\review-export-20261017\review-export-20261017\reviews_naver.csv\reviews_naver.csv"),
-    "ohouse": Path(r"C:\Users\kimha\OneDrive\Desktop\review-export-20261017\review-export-20261017\reviews_ohouse.csv\reviews_ohouse.csv"),
-    "oliveyoung": Path(r"C:\Users\kimha\OneDrive\Desktop\review-export-20261017\review-export-20261017\reviews_oliveyoung.csv\reviews_oliveyoung.csv"),
+    source: DEFAULT_INPUT_ROOT / f"reviews_{source}.csv"
+    for source in ("elevenst", "kurly", "musinsa", "naver", "ohouse", "oliveyoung")
 }
 REQUIRED_COLUMNS = ("platform", "product_id", "review_id", "content", "rating")
+
+
+def portable_report_path(path, external_placeholder=None):
+    """Represent local paths without publishing a user-specific absolute path."""
+    resolved = Path(path).expanduser().resolve()
+    try:
+        return resolved.relative_to(PROJECT_ROOT.resolve()).as_posix()
+    except ValueError:
+        prefix = external_placeholder or "<LOCAL_PATH>"
+        return f"{prefix}/{resolved.name}"
 
 
 def normalize_content(value):
@@ -172,7 +185,7 @@ def load_baseline(connection, path):
             connection.execute("INSERT OR IGNORE INTO base_content VALUES (?)", (content,))
     connection.commit()
     return {
-        "path": str(path), "sheet": "Reviews", "rows": len(frame),
+        "path": portable_report_path(path), "sheet": "Reviews", "rows": len(frame),
         "header_row": header_row, "header_count": header_count,
         "skipped_empty_rows": skipped,
         "platform_counts": dict(platform_counts),
@@ -186,7 +199,11 @@ def process_rows(connection, source, path, fieldnames, rows):
         raise ValueError(f"{source}: 필수 컬럼이 없거나 중복입니다: {', '.join(missing)}")
     if len(set(fieldnames)) != len(fieldnames):
         raise ValueError(f"{source}: 중복된 컬럼명이 있습니다.")
-    scan = SourceScan(source=source, path=str(path), columns=list(fieldnames))
+    scan = SourceScan(
+        source=source,
+        path=portable_report_path(path, "<LOCAL_REVIEW_EXPORT>"),
+        columns=list(fieldnames),
+    )
     for row in rows:
         scan.total_rows += 1
         if None in row or any(row.get(name) is None for name in fieldnames):
@@ -557,7 +574,13 @@ def parse_args(argv=None):
     parser.add_argument("--report", type=Path, default=PROJECT_ROOT / "reports" / "new_review_inventory_20261018.md")
     parser.add_argument("--json", type=Path, default=PROJECT_ROOT / "reports" / "new_review_inventory_20261018.json")
     for source, path in DEFAULT_INPUTS.items():
-        parser.add_argument(f"--{source}", type=Path, default=path)
+        parser.add_argument(
+            f"--{source}", type=Path, default=path,
+            help=(
+                f"{source} CSV (기본 root: PTEXT_REVIEW_EXPORT_ROOT 또는 "
+                "data/review-export)"
+            ),
+        )
     return parser.parse_args(argv)
 
 

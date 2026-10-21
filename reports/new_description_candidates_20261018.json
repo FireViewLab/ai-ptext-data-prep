@@ -1,16 +1,16 @@
 {
   "analysis_type": "human-review candidate discovery; HIGH/MEDIUM are not labels",
   "baseline": {
-    "path": "C:\\Users\\kimha\\Projects\\ai-ptext-data-prep\\outputs\\merged_reviews.xlsx",
+    "path": "outputs/merged_reviews.xlsx",
     "normalized_content_count": 8393
   },
   "sources": {
-    "elevenst": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_elevenst.csv\\reviews_elevenst.csv",
-    "kurly": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_kurly.csv\\reviews_kurly.csv",
-    "musinsa": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_musinsa.csv\\reviews_musinsa.csv",
-    "naver": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_naver.csv\\reviews_naver.csv",
-    "ohouse": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_ohouse.csv\\reviews_ohouse.csv",
-    "oliveyoung": "C:\\Users\\kimha\\OneDrive\\Desktop\\review-export-20261017\\review-export-20261017\\reviews_oliveyoung.csv\\reviews_oliveyoung.csv"
+    "elevenst": "<LOCAL_REVIEW_EXPORT>/reviews_elevenst.csv",
+    "kurly": "<LOCAL_REVIEW_EXPORT>/reviews_kurly.csv",
+    "musinsa": "<LOCAL_REVIEW_EXPORT>/reviews_musinsa.csv",
+    "naver": "<LOCAL_REVIEW_EXPORT>/reviews_naver.csv",
+    "ohouse": "<LOCAL_REVIEW_EXPORT>/reviews_ohouse.csv",
+    "oliveyoung": "<LOCAL_REVIEW_EXPORT>/reviews_oliveyoung.csv"
   },
   "execution": {
     "pilot_limit_per_platform": 5000,

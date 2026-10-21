@@ -1,7 +1,7 @@
 {
   "analysis_type": "V2 HIGH/MEDIUM human-review pool; analyzer tiers are not labels",
   "source": {
-    "path": "C:\\Users\\kimha\\Projects\\ai-ptext-data-prep\\outputs\\new_description_candidates_20261018.csv",
+    "path": "outputs/new_description_candidates_20261018.csv",
     "sha256": "90034f2367a84f5f6b24b0e5351071cfeeecf3446c8193d400984c11c734af71",
     "v1_candidate_rows": 574
   },

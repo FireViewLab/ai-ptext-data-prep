@@ -12,7 +12,7 @@ import json
 from pathlib import Path
 import sys
 
-from analyze_new_review_inventory import normalize_content
+from analyze_new_review_inventory import normalize_content, portable_report_path
 from analyze_ptext_description_candidates import HIGH, MEDIUM, NOT_CANDIDATE, analyze_text
 from inspect_reviews import PROJECT_ROOT
 
@@ -133,7 +133,7 @@ def build_summary(source_path, source_digest, source_rows, records, evaluations)
     return {
         "analysis_type": "V2 HIGH/MEDIUM human-review pool; analyzer tiers are not labels",
         "source": {
-            "path": str(source_path),
+            "path": portable_report_path(source_path),
             "sha256": source_digest,
             "v1_candidate_rows": v1_total,
         },

@@ -4,7 +4,7 @@
 
 ## 기준 데이터와 비교 정책
 
-- 기준 파일: `C:\Users\kimha\Projects\ai-ptext-data-prep\outputs\merged_reviews.xlsx` / 시트: `Reviews` / 8,965행
+- 기준 파일: `outputs/merged_reviews.xlsx` / 시트: `Reviews` / 8,965행
 - 기준 platform 값: `{'ohouse': 5111, 'elevenst': 713, 'oliveyoung': 3066, 'musinsa': 75}`
 - platform은 CSV 실제 값을 사용하며 파일명 기준 예상값으로 임의 치환하지 않습니다.
 - identity는 platform + product_id + review_id 세 값이 모두 있을 때만 비교합니다.

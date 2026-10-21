@@ -19,6 +19,7 @@ from analyze_new_review_inventory import (
     DEFAULT_INPUTS,
     canonical_identifier,
     normalize_content,
+    portable_report_path,
 )
 from analyze_ptext_description_candidates import (
     DESCRIPTION_SIGNALS,
@@ -268,8 +269,14 @@ def build_summary(state, pilot, baseline_path, source_paths, elapsed_seconds, re
         }
     return {
         "analysis_type": "human-review candidate discovery; HIGH/MEDIUM are not labels",
-        "baseline": {"path": str(baseline_path), "normalized_content_count": len(load_baseline_contents(baseline_path))},
-        "sources": {name: str(path) for name, path in source_paths.items()},
+        "baseline": {
+            "path": portable_report_path(baseline_path),
+            "normalized_content_count": len(load_baseline_contents(baseline_path)),
+        },
+        "sources": {
+            name: portable_report_path(path, "<LOCAL_REVIEW_EXPORT>")
+            for name, path in source_paths.items()
+        },
         "execution": {
             "pilot_limit_per_platform": pilot["limit_per_platform"],
             "pilot_rows": pilot["scanned_rows"],
@@ -449,7 +456,13 @@ def parse_args(argv=None):
     parser.add_argument("--json", type=Path, default=PROJECT_ROOT / "reports" / "new_description_candidates_20261018.json")
     parser.add_argument("--report", type=Path, default=PROJECT_ROOT / "reports" / "new_description_candidates_20261018.md")
     for source, path in DEFAULT_INPUTS.items():
-        parser.add_argument(f"--{source}", type=Path, default=path)
+        parser.add_argument(
+            f"--{source}", type=Path, default=path,
+            help=(
+                f"{source} CSV (기본 root: PTEXT_REVIEW_EXPORT_ROOT 또는 "
+                "data/review-export)"
+            ),
+        )
     args = parser.parse_args(argv)
     if args.pilot_limit < 1:
         parser.error("--pilot-limit은 1 이상이어야 합니다.")
