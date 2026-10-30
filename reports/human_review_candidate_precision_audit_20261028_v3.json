@@ -1,0 +1,169 @@
+{
+  "analysis_type": "label-blank candidate precision audit and prototype expansion",
+  "scope": {
+    "full_index_reviews": 1151943,
+    "candidate_content_reviews": 180900,
+    "expansion_scan_scope": "canonical candidate_content; raw export CSVs unavailable at execution",
+    "canonical_manifest_modified": false,
+    "final_10k_pool_created": false,
+    "automatic_human_labels_created": false
+  },
+  "audit": {
+    "existing_rows": 881,
+    "expanded_rows": 271,
+    "total_rows": 1152,
+    "unique_row_uids": 1120,
+    "duplicate_audit_rows": 64,
+    "section_counts": {
+      "EXISTING::EXTREME_RESULT_CLAIM": 37,
+      "EXISTING::IMMEDIATE_EFFECT_CLAIM": 10,
+      "EXISTING::PRODUCT_DESCRIPTION_REPLACEMENT": 100,
+      "EXISTING::PROMOTIONAL_TEMPLATE": 100,
+      "EXISTING::LOW_INFORMATION_PRAISE": 84,
+      "EXISTING::REPEATED_SHORT_TEMPLATE": 200,
+      "EXISTING::EXACT_DUPLICATE_CLUSTER": 200,
+      "EXISTING::HARD_NEGATIVE_CANDIDATE": 150,
+      "EXPANDED::EXTREME_RESULT_EXPANDED_PROTOTYPE": 100,
+      "EXPANDED::IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 21,
+      "EXPANDED::HARD_NEGATIVE_EXPANDED_CANDIDATE": 150
+    },
+    "platform": {
+      "elevenst": 357,
+      "kurly": 216,
+      "musinsa": 147,
+      "naver": 16,
+      "ohouse": 7,
+      "oliveyoung": 409
+    },
+    "category": {
+      "BABY": 65,
+      "BEAUTY": 346,
+      "DIET": 17,
+      "ELECTRONICS": 83,
+      "ETC_UNKNOWN": 57,
+      "FASHION": 85,
+      "FOOD": 147,
+      "HEALTH_SUPPLEMENT": 111,
+      "LIVING": 137,
+      "PET": 50,
+      "SPORTS_OUTDOOR": 54
+    }
+  },
+  "existing_source_counts": {
+    "EXACT_DUPLICATE_CLUSTER": 178311,
+    "EXTREME_RESULT_CLAIM": 37,
+    "HARD_NEGATIVE_CANDIDATE": 1992,
+    "IMMEDIATE_EFFECT_CLAIM": 10,
+    "LOW_INFORMATION_PRAISE": 278,
+    "PRODUCT_DESCRIPTION_REPLACEMENT": 574,
+    "PROMOTIONAL_TEMPLATE": 497,
+    "REPEATED_SHORT_TEMPLATE": 67596,
+    "RANDOM_CONTROL_ELIGIBLE": 773638
+  },
+  "expansions": {
+    "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+      "total": 180,
+      "existing_overlap": 11,
+      "newly_added": 169,
+      "platform": {
+        "elevenst": 18,
+        "kurly": 3,
+        "musinsa": 5,
+        "oliveyoung": 154
+      },
+      "category": {
+        "BEAUTY": 162,
+        "FASHION": 1,
+        "FOOD": 1,
+        "HEALTH_SUPPLEMENT": 8,
+        "LIVING": 7,
+        "PET": 1
+      }
+    },
+    "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+      "total": 37,
+      "existing_overlap": 2,
+      "newly_added": 35,
+      "platform": {
+        "elevenst": 14,
+        "oliveyoung": 23
+      },
+      "category": {
+        "BEAUTY": 22,
+        "HEALTH_SUPPLEMENT": 3,
+        "LIVING": 12
+      }
+    },
+    "HARD_NEGATIVE_EXPANDED_CANDIDATE": {
+      "total": 11084,
+      "existing_overlap": 801,
+      "newly_added": 10283,
+      "platform": {
+        "elevenst": 1331,
+        "kurly": 676,
+        "musinsa": 329,
+        "naver": 4,
+        "ohouse": 9,
+        "oliveyoung": 8735
+      },
+      "category": {
+        "BABY": 240,
+        "BEAUTY": 8380,
+        "ELECTRONICS": 95,
+        "ETC_UNKNOWN": 47,
+        "FASHION": 157,
+        "FOOD": 1567,
+        "HEALTH_SUPPLEMENT": 243,
+        "LIVING": 231,
+        "PET": 82,
+        "SPORTS_OUTDOOR": 42
+      },
+      "newly_added_distribution": {
+        "platform": {
+          "elevenst": 1292,
+          "kurly": 638,
+          "musinsa": 319,
+          "naver": 4,
+          "ohouse": 8,
+          "oliveyoung": 8022
+        },
+        "category": {
+          "BABY": 230,
+          "BEAUTY": 7688,
+          "ELECTRONICS": 90,
+          "ETC_UNKNOWN": 45,
+          "FASHION": 156,
+          "FOOD": 1530,
+          "HEALTH_SUPPLEMENT": 197,
+          "LIVING": 223,
+          "PET": 82,
+          "SPORTS_OUTDOOR": 42
+        }
+      }
+    }
+  },
+  "duplicate_audit": {
+    "repeated_frequency": {
+      "2-4": 65,
+      "20+": 38,
+      "5-9": 51,
+      "10-19": 46
+    },
+    "exact_frequency": {
+      "5-9": 60,
+      "2-4": 66,
+      "20+": 37,
+      "10-19": 37
+    },
+    "exact_scope": {
+      "CROSS_PRODUCT_SAME_PLATFORM": 87,
+      "SAME_PRODUCT": 52,
+      "CROSS_PLATFORM": 61
+    }
+  },
+  "limitations": [
+    "raw 6-platform CSVs were unavailable; expansion recall outside canonical candidate_content was not measured",
+    "candidate counts do not establish precision or recall",
+    "human labels remain blank"
+  ]
+}
