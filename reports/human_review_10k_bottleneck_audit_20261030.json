@@ -1,0 +1,5234 @@
+{
+  "analysis_type": "read-only quota bottleneck diagnostics; no labels or review dataset",
+  "v3_reproduction": [
+    {
+      "name": "precision_first",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 6953,
+      "target_shortfall": 3047,
+      "bucket_selected": {
+        "signal_focused": 3795,
+        "hard_negative": 1658,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 29,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 74,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 9,
+        "PROMOTIONAL_TEMPLATE": 376,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1350,
+        "EXACT_DUPLICATE_CLUSTER": 1350,
+        "HARD_NEGATIVE_UNION": 1658,
+        "HARD_NEGATIVE_CANDIDATE": 463,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1195,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 514,
+          "unfilled": 60,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 60,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 29,
+          "unfilled": 8,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 7,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1100,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 74,
+          "unfilled": 1026,
+          "sequential_loss_attribution": {
+            "source_availability": 931,
+            "row_uid_collision": 5,
+            "product_cap": 57,
+            "duplicate_cluster_cap": 33,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 9,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 800,
+          "available": 35,
+          "raw_row_uids_already_used": 8,
+          "available_after_row_uid_exclusion": 27,
+          "selected": 9,
+          "unfilled": 791,
+          "sequential_loss_attribution": {
+            "source_availability": 765,
+            "row_uid_collision": 8,
+            "product_cap": 4,
+            "duplicate_cluster_cap": 14,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 376,
+          "unfilled": 121,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 101,
+            "duplicate_cluster_cap": 13,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 84,
+          "unfilled": 198,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 73,
+            "duplicate_cluster_cap": 121,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1350,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1350,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1350,
+          "available": 178311,
+          "raw_row_uids_already_used": 1488,
+          "available_after_row_uid_exclusion": 176823,
+          "selected": 1350,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 412,
+          "available_after_row_uid_exclusion": 11863,
+          "selected": 1658,
+          "unfilled": 842,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 288,
+            "duplicate_cluster_cap": 554,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 10
+        }
+      },
+      "platform": {
+        "elevenst": 1801,
+        "kurly": 1052,
+        "musinsa": 852,
+        "naver": 92,
+        "ohouse": 127,
+        "oliveyoung": 3029
+      },
+      "category": {
+        "BABY": 263,
+        "BEAUTY": 2846,
+        "DIET": 24,
+        "ELECTRONICS": 535,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 472,
+        "FOOD": 858,
+        "HEALTH_SUPPLEMENT": 448,
+        "LIVING": 768,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 374
+      },
+      "unique_products": 4204,
+      "unique_duplicate_clusters": 4058,
+      "rows_in_duplicate_clusters": 4058,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "balanced",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 6706,
+      "target_shortfall": 3294,
+      "bucket_selected": {
+        "signal_focused": 3495,
+        "hard_negative": 1711,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 29,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 74,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 9,
+        "PROMOTIONAL_TEMPLATE": 376,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 1711,
+        "HARD_NEGATIVE_CANDIDATE": 474,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1237,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 514,
+          "unfilled": 60,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 60,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 29,
+          "unfilled": 8,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 7,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 74,
+          "unfilled": 1226,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 5,
+            "product_cap": 57,
+            "duplicate_cluster_cap": 33,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 9,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 8,
+          "available_after_row_uid_exclusion": 27,
+          "selected": 9,
+          "unfilled": 891,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 8,
+            "product_cap": 4,
+            "duplicate_cluster_cap": 14,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 376,
+          "unfilled": 121,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 101,
+            "duplicate_cluster_cap": 13,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 84,
+          "unfilled": 198,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 73,
+            "duplicate_cluster_cap": 121,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1338,
+          "available_after_row_uid_exclusion": 176973,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 401,
+          "available_after_row_uid_exclusion": 11874,
+          "selected": 1711,
+          "unfilled": 789,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 196,
+            "duplicate_cluster_cap": 593,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 10
+        }
+      },
+      "platform": {
+        "elevenst": 1694,
+        "kurly": 1006,
+        "musinsa": 804,
+        "naver": 91,
+        "ohouse": 117,
+        "oliveyoung": 2994
+      },
+      "category": {
+        "BABY": 263,
+        "BEAUTY": 2791,
+        "DIET": 24,
+        "ELECTRONICS": 509,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 449,
+        "FOOD": 808,
+        "HEALTH_SUPPLEMENT": 425,
+        "LIVING": 723,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 349
+      },
+      "unique_products": 4081,
+      "unique_duplicate_clusters": 3800,
+      "rows_in_duplicate_clusters": 3800,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "diversity_first",
+      "policy": {
+        "product_cap": 1,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 5227,
+      "target_shortfall": 4773,
+      "bucket_selected": {
+        "signal_focused": 2930,
+        "hard_negative": 797,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 402,
+        "EXTREME_RESULT_CLAIM": 22,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 53,
+        "IMMEDIATE_EFFECT_CLAIM": 6,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 8,
+        "PROMOTIONAL_TEMPLATE": 262,
+        "LOW_INFORMATION_PRAISE": 77,
+        "REPEATED_SHORT_TEMPLATE": 1050,
+        "EXACT_DUPLICATE_CLUSTER": 1050,
+        "HARD_NEGATIVE_UNION": 797,
+        "HARD_NEGATIVE_CANDIDATE": 203,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 594,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 402,
+          "unfilled": 172,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 172,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 22,
+          "unfilled": 15,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 15,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1500,
+          "available": 169,
+          "raw_row_uids_already_used": 4,
+          "available_after_row_uid_exclusion": 165,
+          "selected": 53,
+          "unfilled": 1447,
+          "sequential_loss_attribution": {
+            "source_availability": 1331,
+            "row_uid_collision": 4,
+            "product_cap": 94,
+            "duplicate_cluster_cap": 18,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 6,
+          "unfilled": 4,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 4,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 1000,
+          "available": 35,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 28,
+          "selected": 8,
+          "unfilled": 992,
+          "sequential_loss_attribution": {
+            "source_availability": 965,
+            "row_uid_collision": 7,
+            "product_cap": 9,
+            "duplicate_cluster_cap": 11,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 262,
+          "unfilled": 235,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 221,
+            "duplicate_cluster_cap": 7,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 77,
+          "unfilled": 205,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 127,
+            "duplicate_cluster_cap": 74,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1050,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1050,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1050,
+          "available": 178311,
+          "raw_row_uids_already_used": 1164,
+          "available_after_row_uid_exclusion": 177147,
+          "selected": 1050,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 290,
+          "available_after_row_uid_exclusion": 11985,
+          "selected": 797,
+          "unfilled": 1703,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1584,
+            "duplicate_cluster_cap": 119,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 8289,
+          "raw_row_uids_already_used_in_frame": 4
+        }
+      },
+      "platform": {
+        "elevenst": 1466,
+        "kurly": 817,
+        "musinsa": 799,
+        "naver": 56,
+        "ohouse": 100,
+        "oliveyoung": 1989
+      },
+      "category": {
+        "BABY": 136,
+        "BEAUTY": 1832,
+        "DIET": 12,
+        "ELECTRONICS": 511,
+        "ETC_UNKNOWN": 67,
+        "FASHION": 442,
+        "FOOD": 782,
+        "HEALTH_SUPPLEMENT": 266,
+        "LIVING": 668,
+        "PET": 124,
+        "SPORTS_OUTDOOR": 387
+      },
+      "unique_products": 5227,
+      "unique_duplicate_clusters": 2814,
+      "rows_in_duplicate_clusters": 2814,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    }
+  ],
+  "balanced_hard_negative": {
+    "raw_union_available": 12275,
+    "v3_selected": 1711,
+    "sequential_diagnostics": {
+      "requested": 2500,
+      "available": 12275,
+      "raw_row_uids_already_used": 401,
+      "available_after_row_uid_exclusion": 11874,
+      "selected": 1711,
+      "unfilled": 789,
+      "sequential_loss_attribution": {
+        "source_availability": 0,
+        "row_uid_collision": 0,
+        "product_cap": 196,
+        "duplicate_cluster_cap": 593,
+        "normalized_text_cap": 0
+      }
+    },
+    "independent_capacity": {
+      "1": {
+        "selected_from_empty_state": 1938,
+        "target_shortfall": 562,
+        "unique_products": 1938
+      },
+      "2": {
+        "selected_from_empty_state": 2500,
+        "target_shortfall": 0,
+        "unique_products": 1660
+      },
+      "3": {
+        "selected_from_empty_state": 2500,
+        "target_shortfall": 0,
+        "unique_products": 1453
+      },
+      "5": {
+        "selected_from_empty_state": 2500,
+        "target_shortfall": 0,
+        "unique_products": 1316
+      },
+      "unlimited": {
+        "selected_from_empty_state": 2500,
+        "target_shortfall": 0
+      }
+    }
+  },
+  "sensitivity": [
+    {
+      "name": "availability_adjusted_quotas",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 6706,
+      "target_shortfall": 3294,
+      "bucket_selected": {
+        "signal_focused": 3495,
+        "hard_negative": 1711,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 29,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 74,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 9,
+        "PROMOTIONAL_TEMPLATE": 376,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 1711,
+        "HARD_NEGATIVE_CANDIDATE": 474,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1237,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 514,
+          "unfilled": 60,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 60,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 29,
+          "unfilled": 8,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 7,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 169,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 74,
+          "unfilled": 95,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 5,
+            "product_cap": 57,
+            "duplicate_cluster_cap": 33,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 9,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 35,
+          "available": 35,
+          "raw_row_uids_already_used": 8,
+          "available_after_row_uid_exclusion": 27,
+          "selected": 9,
+          "unfilled": 26,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 8,
+            "product_cap": 4,
+            "duplicate_cluster_cap": 14,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 376,
+          "unfilled": 121,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 101,
+            "duplicate_cluster_cap": 13,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 278,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 84,
+          "unfilled": 194,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 73,
+            "duplicate_cluster_cap": 121,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1338,
+          "available_after_row_uid_exclusion": 176973,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 401,
+          "available_after_row_uid_exclusion": 11874,
+          "selected": 1711,
+          "unfilled": 789,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 196,
+            "duplicate_cluster_cap": 593,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 10
+        }
+      },
+      "platform": {
+        "elevenst": 1694,
+        "kurly": 1006,
+        "musinsa": 804,
+        "naver": 91,
+        "ohouse": 117,
+        "oliveyoung": 2994
+      },
+      "category": {
+        "BABY": 263,
+        "BEAUTY": 2791,
+        "DIET": 24,
+        "ELECTRONICS": 509,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 449,
+        "FOOD": 808,
+        "HEALTH_SUPPLEMENT": 425,
+        "LIVING": 723,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 349
+      },
+      "unique_products": 4081,
+      "unique_duplicate_clusters": 3800,
+      "rows_in_duplicate_clusters": 3800,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "bucket_order_hard-signal-random",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "hard",
+          "signal",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 6909,
+      "target_shortfall": 3091,
+      "bucket_selected": {
+        "signal_focused": 2909,
+        "hard_negative": 2500,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "HARD_NEGATIVE_UNION": 2500,
+        "HARD_NEGATIVE_CANDIDATE": 653,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1847,
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 208,
+        "EXTREME_RESULT_CLAIM": 13,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 14,
+        "IMMEDIATE_EFFECT_CLAIM": 6,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 4,
+        "PROMOTIONAL_TEMPLATE": 183,
+        "LOW_INFORMATION_PRAISE": 81,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 12275,
+          "selected": 2500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 67,
+          "available_after_row_uid_exclusion": 507,
+          "selected": 208,
+          "unfilled": 366,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 67,
+            "product_cap": 299,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 8,
+          "available_after_row_uid_exclusion": 29,
+          "selected": 13,
+          "unfilled": 24,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 8,
+            "product_cap": 16,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 20,
+          "available_after_row_uid_exclusion": 149,
+          "selected": 14,
+          "unfilled": 1286,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 20,
+            "product_cap": 125,
+            "duplicate_cluster_cap": 10,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 6,
+          "unfilled": 4,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 4,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 6,
+          "available_after_row_uid_exclusion": 29,
+          "selected": 4,
+          "unfilled": 896,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 6,
+            "product_cap": 17,
+            "duplicate_cluster_cap": 8,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 85,
+          "available_after_row_uid_exclusion": 412,
+          "selected": 183,
+          "unfilled": 314,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 85,
+            "product_cap": 228,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 81,
+          "unfilled": 201,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 78,
+            "duplicate_cluster_cap": 119,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 3046,
+          "available_after_row_uid_exclusion": 175265,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 11
+        }
+      },
+      "platform": {
+        "elevenst": 1908,
+        "kurly": 1086,
+        "musinsa": 861,
+        "naver": 93,
+        "ohouse": 128,
+        "oliveyoung": 2833
+      },
+      "category": {
+        "BABY": 265,
+        "BEAUTY": 2654,
+        "DIET": 24,
+        "ELECTRONICS": 541,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 472,
+        "FOOD": 955,
+        "HEALTH_SUPPLEMENT": 459,
+        "LIVING": 791,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 383
+      },
+      "unique_products": 4202,
+      "unique_duplicate_clusters": 4246,
+      "rows_in_duplicate_clusters": 4246,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "bucket_order_random-hard-signal",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "random",
+          "hard",
+          "signal"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 6853,
+      "target_shortfall": 3147,
+      "bucket_selected": {
+        "signal_focused": 2853,
+        "hard_negative": 2500,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "RANDOM_CONTROL_ELIGIBLE": 1500,
+        "HARD_NEGATIVE_UNION": 2500,
+        "HARD_NEGATIVE_CANDIDATE": 674,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1826,
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 183,
+        "EXTREME_RESULT_CLAIM": 8,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 11,
+        "IMMEDIATE_EFFECT_CLAIM": 4,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 4,
+        "PROMOTIONAL_TEMPLATE": 163,
+        "LOW_INFORMATION_PRAISE": 80,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200
+      },
+      "source_diagnostics": {
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 0
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 12275,
+          "selected": 2500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 66,
+          "available_after_row_uid_exclusion": 508,
+          "selected": 183,
+          "unfilled": 391,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 66,
+            "product_cap": 325,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 9,
+          "available_after_row_uid_exclusion": 28,
+          "selected": 8,
+          "unfilled": 29,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 9,
+            "product_cap": 20,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 23,
+          "available_after_row_uid_exclusion": 146,
+          "selected": 11,
+          "unfilled": 1289,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 23,
+            "product_cap": 126,
+            "duplicate_cluster_cap": 9,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 4,
+          "unfilled": 6,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 6,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 6,
+          "available_after_row_uid_exclusion": 29,
+          "selected": 4,
+          "unfilled": 896,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 6,
+            "product_cap": 17,
+            "duplicate_cluster_cap": 8,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 88,
+          "available_after_row_uid_exclusion": 409,
+          "selected": 163,
+          "unfilled": 334,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 88,
+            "product_cap": 245,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 80,
+          "unfilled": 202,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 96,
+            "duplicate_cluster_cap": 102,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 3019,
+          "available_after_row_uid_exclusion": 175292,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        }
+      },
+      "platform": {
+        "elevenst": 1816,
+        "kurly": 1073,
+        "musinsa": 899,
+        "naver": 70,
+        "ohouse": 102,
+        "oliveyoung": 2893
+      },
+      "category": {
+        "BABY": 230,
+        "BEAUTY": 2713,
+        "DIET": 24,
+        "ELECTRONICS": 511,
+        "ETC_UNKNOWN": 110,
+        "FASHION": 507,
+        "FOOD": 986,
+        "HEALTH_SUPPLEMENT": 419,
+        "LIVING": 752,
+        "PET": 215,
+        "SPORTS_OUTDOOR": 386
+      },
+      "unique_products": 4190,
+      "unique_duplicate_clusters": 4219,
+      "rows_in_duplicate_clusters": 4219,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "product_cap_1",
+      "policy": {
+        "product_cap": 1,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 5452,
+      "target_shortfall": 4548,
+      "bucket_selected": {
+        "signal_focused": 3230,
+        "hard_negative": 722,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 402,
+        "EXTREME_RESULT_CLAIM": 22,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 53,
+        "IMMEDIATE_EFFECT_CLAIM": 6,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 8,
+        "PROMOTIONAL_TEMPLATE": 262,
+        "LOW_INFORMATION_PRAISE": 77,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 722,
+        "HARD_NEGATIVE_CANDIDATE": 189,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 533,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 402,
+          "unfilled": 172,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 172,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 22,
+          "unfilled": 15,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 15,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 4,
+          "available_after_row_uid_exclusion": 165,
+          "selected": 53,
+          "unfilled": 1247,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 4,
+            "product_cap": 94,
+            "duplicate_cluster_cap": 18,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 6,
+          "unfilled": 4,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 4,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 28,
+          "selected": 8,
+          "unfilled": 892,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 7,
+            "product_cap": 9,
+            "duplicate_cluster_cap": 11,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 262,
+          "unfilled": 235,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 221,
+            "duplicate_cluster_cap": 7,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 77,
+          "unfilled": 205,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 127,
+            "duplicate_cluster_cap": 74,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1314,
+          "available_after_row_uid_exclusion": 176997,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 298,
+          "available_after_row_uid_exclusion": 11977,
+          "selected": 722,
+          "unfilled": 1778,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1671,
+            "duplicate_cluster_cap": 107,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 8289,
+          "raw_row_uids_already_used_in_frame": 4
+        }
+      },
+      "platform": {
+        "elevenst": 1564,
+        "kurly": 871,
+        "musinsa": 855,
+        "naver": 56,
+        "ohouse": 100,
+        "oliveyoung": 2006
+      },
+      "category": {
+        "BABY": 136,
+        "BEAUTY": 1849,
+        "DIET": 12,
+        "ELECTRONICS": 547,
+        "ETC_UNKNOWN": 67,
+        "FASHION": 498,
+        "FOOD": 836,
+        "HEALTH_SUPPLEMENT": 266,
+        "LIVING": 730,
+        "PET": 124,
+        "SPORTS_OUTDOOR": 387
+      },
+      "unique_products": 5452,
+      "unique_duplicate_clusters": 3050,
+      "rows_in_duplicate_clusters": 3050,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "product_cap_2",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 6706,
+      "target_shortfall": 3294,
+      "bucket_selected": {
+        "signal_focused": 3495,
+        "hard_negative": 1711,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 29,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 74,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 9,
+        "PROMOTIONAL_TEMPLATE": 376,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 1711,
+        "HARD_NEGATIVE_CANDIDATE": 474,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1237,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 514,
+          "unfilled": 60,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 60,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 29,
+          "unfilled": 8,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 7,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 74,
+          "unfilled": 1226,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 5,
+            "product_cap": 57,
+            "duplicate_cluster_cap": 33,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 9,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 8,
+          "available_after_row_uid_exclusion": 27,
+          "selected": 9,
+          "unfilled": 891,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 8,
+            "product_cap": 4,
+            "duplicate_cluster_cap": 14,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 376,
+          "unfilled": 121,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 101,
+            "duplicate_cluster_cap": 13,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 84,
+          "unfilled": 198,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 73,
+            "duplicate_cluster_cap": 121,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1338,
+          "available_after_row_uid_exclusion": 176973,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 401,
+          "available_after_row_uid_exclusion": 11874,
+          "selected": 1711,
+          "unfilled": 789,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 196,
+            "duplicate_cluster_cap": 593,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 10
+        }
+      },
+      "platform": {
+        "elevenst": 1694,
+        "kurly": 1006,
+        "musinsa": 804,
+        "naver": 91,
+        "ohouse": 117,
+        "oliveyoung": 2994
+      },
+      "category": {
+        "BABY": 263,
+        "BEAUTY": 2791,
+        "DIET": 24,
+        "ELECTRONICS": 509,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 449,
+        "FOOD": 808,
+        "HEALTH_SUPPLEMENT": 425,
+        "LIVING": 723,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 349
+      },
+      "unique_products": 4081,
+      "unique_duplicate_clusters": 3800,
+      "rows_in_duplicate_clusters": 3800,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "product_cap_3",
+      "policy": {
+        "product_cap": 3,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 7571,
+      "target_shortfall": 2429,
+      "bucket_selected": {
+        "signal_focused": 3599,
+        "hard_negative": 2472,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 553,
+        "EXTREME_RESULT_CLAIM": 36,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 86,
+        "IMMEDIATE_EFFECT_CLAIM": 10,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 10,
+        "PROMOTIONAL_TEMPLATE": 420,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 2472,
+        "HARD_NEGATIVE_CANDIDATE": 745,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1727,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 553,
+          "unfilled": 21,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 21,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 36,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 86,
+          "unfilled": 1214,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 5,
+            "product_cap": 36,
+            "duplicate_cluster_cap": 42,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 10,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 8,
+          "available_after_row_uid_exclusion": 27,
+          "selected": 10,
+          "unfilled": 890,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 8,
+            "product_cap": 3,
+            "duplicate_cluster_cap": 14,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 8,
+          "available_after_row_uid_exclusion": 489,
+          "selected": 420,
+          "unfilled": 77,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 8,
+            "product_cap": 47,
+            "duplicate_cluster_cap": 22,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 84,
+          "unfilled": 198,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 50,
+            "duplicate_cluster_cap": 144,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1349,
+          "available_after_row_uid_exclusion": 176962,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 450,
+          "available_after_row_uid_exclusion": 11825,
+          "selected": 2472,
+          "unfilled": 28,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 28,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 23549,
+          "raw_row_uids_already_used_in_frame": 24
+        }
+      },
+      "platform": {
+        "elevenst": 1707,
+        "kurly": 1118,
+        "musinsa": 854,
+        "naver": 89,
+        "ohouse": 100,
+        "oliveyoung": 3703
+      },
+      "category": {
+        "BABY": 278,
+        "BEAUTY": 3414,
+        "DIET": 36,
+        "ELECTRONICS": 490,
+        "ETC_UNKNOWN": 160,
+        "FASHION": 495,
+        "FOOD": 843,
+        "HEALTH_SUPPLEMENT": 468,
+        "LIVING": 715,
+        "PET": 324,
+        "SPORTS_OUTDOOR": 348
+      },
+      "unique_products": 3702,
+      "unique_duplicate_clusters": 4318,
+      "rows_in_duplicate_clusters": 4318,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "product_cap_5",
+      "policy": {
+        "product_cap": 5,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 7659,
+      "target_shortfall": 2341,
+      "bucket_selected": {
+        "signal_focused": 3659,
+        "hard_negative": 2500,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 572,
+        "EXTREME_RESULT_CLAIM": 36,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 96,
+        "IMMEDIATE_EFFECT_CLAIM": 10,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 11,
+        "PROMOTIONAL_TEMPLATE": 450,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 2500,
+        "HARD_NEGATIVE_CANDIDATE": 583,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1917,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 572,
+          "unfilled": 2,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 2,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 36,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 96,
+          "unfilled": 1204,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 5,
+            "product_cap": 15,
+            "duplicate_cluster_cap": 53,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 10,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 9,
+          "available_after_row_uid_exclusion": 26,
+          "selected": 11,
+          "unfilled": 889,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 9,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 14,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 9,
+          "available_after_row_uid_exclusion": 488,
+          "selected": 450,
+          "unfilled": 47,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 9,
+            "product_cap": 5,
+            "duplicate_cluster_cap": 33,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 84,
+          "unfilled": 198,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 29,
+            "duplicate_cluster_cap": 165,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1357,
+          "available_after_row_uid_exclusion": 176954,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 474,
+          "available_after_row_uid_exclusion": 11801,
+          "selected": 2500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 37903,
+          "raw_row_uids_already_used_in_frame": 20
+        }
+      },
+      "platform": {
+        "elevenst": 1695,
+        "kurly": 1261,
+        "musinsa": 906,
+        "naver": 95,
+        "ohouse": 87,
+        "oliveyoung": 3615
+      },
+      "category": {
+        "BABY": 338,
+        "BEAUTY": 3235,
+        "DIET": 60,
+        "ELECTRONICS": 466,
+        "ETC_UNKNOWN": 209,
+        "FASHION": 496,
+        "FOOD": 920,
+        "HEALTH_SUPPLEMENT": 535,
+        "LIVING": 697,
+        "PET": 371,
+        "SPORTS_OUTDOOR": 332
+      },
+      "unique_products": 3281,
+      "unique_duplicate_clusters": 4533,
+      "rows_in_duplicate_clusters": 4533,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "cluster_1_text_1",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": 1,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 6706,
+      "target_shortfall": 3294,
+      "bucket_selected": {
+        "signal_focused": 3495,
+        "hard_negative": 1711,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 29,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 74,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 9,
+        "PROMOTIONAL_TEMPLATE": 376,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 1711,
+        "HARD_NEGATIVE_CANDIDATE": 474,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1237,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 514,
+          "unfilled": 60,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 60,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 29,
+          "unfilled": 8,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 7,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 74,
+          "unfilled": 1226,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 5,
+            "product_cap": 57,
+            "duplicate_cluster_cap": 33,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 9,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 8,
+          "available_after_row_uid_exclusion": 27,
+          "selected": 9,
+          "unfilled": 891,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 8,
+            "product_cap": 4,
+            "duplicate_cluster_cap": 14,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 376,
+          "unfilled": 121,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 101,
+            "duplicate_cluster_cap": 13,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 84,
+          "unfilled": 198,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 73,
+            "duplicate_cluster_cap": 121,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1338,
+          "available_after_row_uid_exclusion": 176973,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 401,
+          "available_after_row_uid_exclusion": 11874,
+          "selected": 1711,
+          "unfilled": 789,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 196,
+            "duplicate_cluster_cap": 593,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 10
+        }
+      },
+      "platform": {
+        "elevenst": 1694,
+        "kurly": 1006,
+        "musinsa": 804,
+        "naver": 91,
+        "ohouse": 117,
+        "oliveyoung": 2994
+      },
+      "category": {
+        "BABY": 263,
+        "BEAUTY": 2791,
+        "DIET": 24,
+        "ELECTRONICS": 509,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 449,
+        "FOOD": 808,
+        "HEALTH_SUPPLEMENT": 425,
+        "LIVING": 723,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 349
+      },
+      "unique_products": 4081,
+      "unique_duplicate_clusters": 3800,
+      "rows_in_duplicate_clusters": 3800,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "cluster_1_text_2",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": 2,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 6706,
+      "target_shortfall": 3294,
+      "bucket_selected": {
+        "signal_focused": 3495,
+        "hard_negative": 1711,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 29,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 74,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 9,
+        "PROMOTIONAL_TEMPLATE": 376,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 1711,
+        "HARD_NEGATIVE_CANDIDATE": 474,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1237,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 514,
+          "unfilled": 60,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 60,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 29,
+          "unfilled": 8,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 7,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 74,
+          "unfilled": 1226,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 5,
+            "product_cap": 57,
+            "duplicate_cluster_cap": 33,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 9,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 8,
+          "available_after_row_uid_exclusion": 27,
+          "selected": 9,
+          "unfilled": 891,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 8,
+            "product_cap": 4,
+            "duplicate_cluster_cap": 14,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 376,
+          "unfilled": 121,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 101,
+            "duplicate_cluster_cap": 13,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 84,
+          "unfilled": 198,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 73,
+            "duplicate_cluster_cap": 121,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1338,
+          "available_after_row_uid_exclusion": 176973,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 401,
+          "available_after_row_uid_exclusion": 11874,
+          "selected": 1711,
+          "unfilled": 789,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 196,
+            "duplicate_cluster_cap": 593,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 10
+        }
+      },
+      "platform": {
+        "elevenst": 1694,
+        "kurly": 1006,
+        "musinsa": 804,
+        "naver": 91,
+        "ohouse": 117,
+        "oliveyoung": 2994
+      },
+      "category": {
+        "BABY": 263,
+        "BEAUTY": 2791,
+        "DIET": 24,
+        "ELECTRONICS": 509,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 449,
+        "FOOD": 808,
+        "HEALTH_SUPPLEMENT": 425,
+        "LIVING": 723,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 349
+      },
+      "unique_products": 4081,
+      "unique_duplicate_clusters": 3800,
+      "rows_in_duplicate_clusters": 3800,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "cluster_2_text_1",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 2,
+        "text_cap": 1,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 6706,
+      "target_shortfall": 3294,
+      "bucket_selected": {
+        "signal_focused": 3495,
+        "hard_negative": 1711,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 29,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 74,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 9,
+        "PROMOTIONAL_TEMPLATE": 376,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 1711,
+        "HARD_NEGATIVE_CANDIDATE": 474,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1237,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 514,
+          "unfilled": 60,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 60,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 29,
+          "unfilled": 8,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 7,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 1
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 74,
+          "unfilled": 1226,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 5,
+            "product_cap": 57,
+            "duplicate_cluster_cap": 7,
+            "normalized_text_cap": 26
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 9,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 8,
+          "available_after_row_uid_exclusion": 27,
+          "selected": 9,
+          "unfilled": 891,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 8,
+            "product_cap": 4,
+            "duplicate_cluster_cap": 6,
+            "normalized_text_cap": 8
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 376,
+          "unfilled": 121,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 101,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 12
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 84,
+          "unfilled": 198,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 73,
+            "duplicate_cluster_cap": 98,
+            "normalized_text_cap": 23
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1338,
+          "available_after_row_uid_exclusion": 176973,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 401,
+          "available_after_row_uid_exclusion": 11874,
+          "selected": 1711,
+          "unfilled": 789,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 196,
+            "duplicate_cluster_cap": 208,
+            "normalized_text_cap": 385
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 10
+        }
+      },
+      "platform": {
+        "elevenst": 1694,
+        "kurly": 1006,
+        "musinsa": 804,
+        "naver": 91,
+        "ohouse": 117,
+        "oliveyoung": 2994
+      },
+      "category": {
+        "BABY": 263,
+        "BEAUTY": 2791,
+        "DIET": 24,
+        "ELECTRONICS": 509,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 449,
+        "FOOD": 808,
+        "HEALTH_SUPPLEMENT": 425,
+        "LIVING": 723,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 349
+      },
+      "unique_products": 4081,
+      "unique_duplicate_clusters": 3800,
+      "rows_in_duplicate_clusters": 3800,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "cluster_2_text_2",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 2,
+        "text_cap": 2,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 7138,
+      "target_shortfall": 2862,
+      "bucket_selected": {
+        "signal_focused": 3560,
+        "hard_negative": 2078,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 30,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 100,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 14,
+        "PROMOTIONAL_TEMPLATE": 386,
+        "LOW_INFORMATION_PRAISE": 107,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 2078,
+        "HARD_NEGATIVE_CANDIDATE": 446,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1632,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 514,
+          "unfilled": 60,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 60,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 30,
+          "unfilled": 7,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 7,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 100,
+          "unfilled": 1200,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 5,
+            "product_cap": 57,
+            "duplicate_cluster_cap": 7,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 9,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 10,
+          "available_after_row_uid_exclusion": 25,
+          "selected": 14,
+          "unfilled": 886,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 10,
+            "product_cap": 5,
+            "duplicate_cluster_cap": 6,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 386,
+          "unfilled": 111,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 103,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 107,
+          "unfilled": 175,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 73,
+            "duplicate_cluster_cap": 98,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 47,
+          "available_after_row_uid_exclusion": 67549,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1405,
+          "available_after_row_uid_exclusion": 176906,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 417,
+          "available_after_row_uid_exclusion": 11858,
+          "selected": 2078,
+          "unfilled": 422,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 217,
+            "duplicate_cluster_cap": 205,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 8
+        }
+      },
+      "platform": {
+        "elevenst": 1726,
+        "kurly": 1085,
+        "musinsa": 835,
+        "naver": 104,
+        "ohouse": 118,
+        "oliveyoung": 3270
+      },
+      "category": {
+        "BABY": 257,
+        "BEAUTY": 3023,
+        "DIET": 24,
+        "ELECTRONICS": 528,
+        "ETC_UNKNOWN": 130,
+        "FASHION": 477,
+        "FOOD": 918,
+        "HEALTH_SUPPLEMENT": 422,
+        "LIVING": 763,
+        "PET": 239,
+        "SPORTS_OUTDOOR": 357
+      },
+      "unique_products": 4214,
+      "unique_duplicate_clusters": 3399,
+      "rows_in_duplicate_clusters": 4263,
+      "max_rows_per_duplicate_cluster": 2,
+      "normalized_texts_repeated_in_selection": 864,
+      "max_rows_per_normalized_text": 2
+    },
+    {
+      "name": "cluster_5_text_5",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 5,
+        "text_cap": 5,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 7311,
+      "target_shortfall": 2689,
+      "bucket_selected": {
+        "signal_focused": 3593,
+        "hard_negative": 2218,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 30,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 107,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 17,
+        "PROMOTIONAL_TEMPLATE": 387,
+        "LOW_INFORMATION_PRAISE": 129,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 2218,
+        "HARD_NEGATIVE_CANDIDATE": 425,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1793,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 514,
+          "unfilled": 60,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 60,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 30,
+          "unfilled": 7,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 7,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 107,
+          "unfilled": 1193,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 5,
+            "product_cap": 57,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 9,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 13,
+          "available_after_row_uid_exclusion": 22,
+          "selected": 17,
+          "unfilled": 883,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 13,
+            "product_cap": 5,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 387,
+          "unfilled": 110,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 103,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 129,
+          "unfilled": 153,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 73,
+            "duplicate_cluster_cap": 76,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 69,
+          "available_after_row_uid_exclusion": 67527,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1438,
+          "available_after_row_uid_exclusion": 176873,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 419,
+          "available_after_row_uid_exclusion": 11856,
+          "selected": 2218,
+          "unfilled": 282,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 223,
+            "duplicate_cluster_cap": 59,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 8
+        }
+      },
+      "platform": {
+        "elevenst": 1743,
+        "kurly": 1108,
+        "musinsa": 833,
+        "naver": 105,
+        "ohouse": 119,
+        "oliveyoung": 3403
+      },
+      "category": {
+        "BABY": 258,
+        "BEAUTY": 3140,
+        "DIET": 24,
+        "ELECTRONICS": 530,
+        "ETC_UNKNOWN": 131,
+        "FASHION": 476,
+        "FOOD": 951,
+        "HEALTH_SUPPLEMENT": 423,
+        "LIVING": 782,
+        "PET": 239,
+        "SPORTS_OUTDOOR": 357
+      },
+      "unique_products": 4292,
+      "unique_duplicate_clusters": 3308,
+      "rows_in_duplicate_clusters": 4457,
+      "max_rows_per_duplicate_cluster": 5,
+      "normalized_texts_repeated_in_selection": 822,
+      "max_rows_per_normalized_text": 5
+    },
+    {
+      "name": "cluster_none_text_none",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": null,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 7439,
+      "target_shortfall": 2561,
+      "bucket_selected": {
+        "signal_focused": 3669,
+        "hard_negative": 2270,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 30,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 107,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 17,
+        "PROMOTIONAL_TEMPLATE": 387,
+        "LOW_INFORMATION_PRAISE": 205,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 2270,
+        "HARD_NEGATIVE_CANDIDATE": 417,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1853,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 514,
+          "unfilled": 60,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 60,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 30,
+          "unfilled": 7,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 7,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 107,
+          "unfilled": 1193,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 5,
+            "product_cap": 57,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 9,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 13,
+          "available_after_row_uid_exclusion": 22,
+          "selected": 17,
+          "unfilled": 883,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 13,
+            "product_cap": 5,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 387,
+          "unfilled": 110,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 103,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 205,
+          "unfilled": 77,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 73,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 151,
+          "available_after_row_uid_exclusion": 67445,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1520,
+          "available_after_row_uid_exclusion": 176791,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 419,
+          "available_after_row_uid_exclusion": 11856,
+          "selected": 2270,
+          "unfilled": 230,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 230,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 8
+        }
+      },
+      "platform": {
+        "elevenst": 1796,
+        "kurly": 1133,
+        "musinsa": 834,
+        "naver": 105,
+        "ohouse": 119,
+        "oliveyoung": 3452
+      },
+      "category": {
+        "BABY": 260,
+        "BEAUTY": 3192,
+        "DIET": 24,
+        "ELECTRONICS": 546,
+        "ETC_UNKNOWN": 133,
+        "FASHION": 476,
+        "FOOD": 976,
+        "HEALTH_SUPPLEMENT": 425,
+        "LIVING": 810,
+        "PET": 239,
+        "SPORTS_OUTDOOR": 358
+      },
+      "unique_products": 4356,
+      "unique_duplicate_clusters": 3286,
+      "rows_in_duplicate_clusters": 4598,
+      "max_rows_per_duplicate_cluster": 68,
+      "normalized_texts_repeated_in_selection": 806,
+      "max_rows_per_normalized_text": 68
+    },
+    {
+      "name": "flat_order_no_category_platform_round_robin",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "flat",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false
+      },
+      "final_unique_row_uid": 6466,
+      "target_shortfall": 3534,
+      "bucket_selected": {
+        "signal_focused": 3495,
+        "hard_negative": 1471,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 29,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 74,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 9,
+        "PROMOTIONAL_TEMPLATE": 376,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 1471,
+        "HARD_NEGATIVE_CANDIDATE": 484,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 987,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 514,
+          "unfilled": 60,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 60,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 29,
+          "unfilled": 8,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 7,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 74,
+          "unfilled": 1226,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 5,
+            "product_cap": 57,
+            "duplicate_cluster_cap": 33,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 9,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 8,
+          "available_after_row_uid_exclusion": 27,
+          "selected": 9,
+          "unfilled": 891,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 8,
+            "product_cap": 4,
+            "duplicate_cluster_cap": 14,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 376,
+          "unfilled": 121,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 101,
+            "duplicate_cluster_cap": 13,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 84,
+          "unfilled": 198,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 73,
+            "duplicate_cluster_cap": 121,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1338,
+          "available_after_row_uid_exclusion": 176973,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 455,
+          "available_after_row_uid_exclusion": 11820,
+          "selected": 1471,
+          "unfilled": 1029,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 498,
+            "duplicate_cluster_cap": 531,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 10
+        }
+      },
+      "platform": {
+        "elevenst": 1071,
+        "kurly": 1617,
+        "musinsa": 835,
+        "naver": 19,
+        "ohouse": 37,
+        "oliveyoung": 2887
+      },
+      "category": {
+        "BABY": 102,
+        "BEAUTY": 2778,
+        "DIET": 5,
+        "ELECTRONICS": 254,
+        "ETC_UNKNOWN": 38,
+        "FASHION": 652,
+        "FOOD": 1713,
+        "HEALTH_SUPPLEMENT": 233,
+        "LIVING": 480,
+        "PET": 65,
+        "SPORTS_OUTDOOR": 146
+      },
+      "unique_products": 4297,
+      "unique_duplicate_clusters": 3546,
+      "rows_in_duplicate_clusters": 3546,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "random_with_duplicate_metadata",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": true
+      },
+      "final_unique_row_uid": 6706,
+      "target_shortfall": 3294,
+      "bucket_selected": {
+        "signal_focused": 3495,
+        "hard_negative": 1711,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 29,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 74,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 9,
+        "PROMOTIONAL_TEMPLATE": 376,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "HARD_NEGATIVE_UNION": 1711,
+        "HARD_NEGATIVE_CANDIDATE": 474,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1237,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 514,
+          "unfilled": 60,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 60,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 29,
+          "unfilled": 8,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 7,
+            "duplicate_cluster_cap": 1,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 164,
+          "selected": 74,
+          "unfilled": 1226,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 5,
+            "product_cap": 57,
+            "duplicate_cluster_cap": 33,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 9,
+          "unfilled": 1,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 1,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 8,
+          "available_after_row_uid_exclusion": 27,
+          "selected": 9,
+          "unfilled": 891,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 8,
+            "product_cap": 4,
+            "duplicate_cluster_cap": 14,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 376,
+          "unfilled": 121,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 101,
+            "duplicate_cluster_cap": 13,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 278,
+          "selected": 84,
+          "unfilled": 198,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 0,
+            "product_cap": 73,
+            "duplicate_cluster_cap": 121,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 24,
+          "available_after_row_uid_exclusion": 67572,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1338,
+          "available_after_row_uid_exclusion": 176973,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 401,
+          "available_after_row_uid_exclusion": 11874,
+          "selected": 1711,
+          "unfilled": 789,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 196,
+            "duplicate_cluster_cap": 593,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 10
+        }
+      },
+      "platform": {
+        "elevenst": 1694,
+        "kurly": 1006,
+        "musinsa": 804,
+        "naver": 91,
+        "ohouse": 117,
+        "oliveyoung": 2994
+      },
+      "category": {
+        "BABY": 263,
+        "BEAUTY": 2791,
+        "DIET": 24,
+        "ELECTRONICS": 509,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 449,
+        "FOOD": 808,
+        "HEALTH_SUPPLEMENT": 425,
+        "LIVING": 723,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 349
+      },
+      "unique_products": 4081,
+      "unique_duplicate_clusters": 3800,
+      "rows_in_duplicate_clusters": 3800,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "signal_source_priority_reversed",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false,
+        "signal_order": [
+          "EXACT_DUPLICATE_CLUSTER",
+          "REPEATED_SHORT_TEMPLATE",
+          "LOW_INFORMATION_PRAISE",
+          "PROMOTIONAL_TEMPLATE",
+          "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE",
+          "IMMEDIATE_EFFECT_CLAIM",
+          "EXTREME_RESULT_EXPANDED_PROTOTYPE",
+          "EXTREME_RESULT_CLAIM",
+          "PRODUCT_DESCRIPTION_REPLACEMENT"
+        ]
+      },
+      "final_unique_row_uid": 6658,
+      "target_shortfall": 3342,
+      "bucket_selected": {
+        "signal_focused": 3370,
+        "hard_negative": 1788,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "LOW_INFORMATION_PRAISE": 59,
+        "PROMOTIONAL_TEMPLATE": 408,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 12,
+        "IMMEDIATE_EFFECT_CLAIM": 8,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 66,
+        "EXTREME_RESULT_CLAIM": 24,
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 393,
+        "HARD_NEGATIVE_UNION": 1788,
+        "HARD_NEGATIVE_CANDIDATE": 485,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1303,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 178311,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 443,
+          "available_after_row_uid_exclusion": 67153,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 12,
+          "available_after_row_uid_exclusion": 266,
+          "selected": 59,
+          "unfilled": 223,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 12,
+            "product_cap": 133,
+            "duplicate_cluster_cap": 74,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 1,
+          "available_after_row_uid_exclusion": 496,
+          "selected": 408,
+          "unfilled": 89,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 1,
+            "product_cap": 71,
+            "duplicate_cluster_cap": 17,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 5,
+          "available_after_row_uid_exclusion": 30,
+          "selected": 12,
+          "unfilled": 888,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 5,
+            "product_cap": 11,
+            "duplicate_cluster_cap": 7,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 8,
+          "unfilled": 2,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 2,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 6,
+          "available_after_row_uid_exclusion": 163,
+          "selected": 66,
+          "unfilled": 1234,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 6,
+            "product_cap": 75,
+            "duplicate_cluster_cap": 22,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 24,
+          "unfilled": 13,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 13,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 9,
+          "available_after_row_uid_exclusion": 565,
+          "selected": 393,
+          "unfilled": 181,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 9,
+            "product_cap": 172,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 357,
+          "available_after_row_uid_exclusion": 11918,
+          "selected": 1788,
+          "unfilled": 712,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 105,
+            "duplicate_cluster_cap": 607,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 10
+        }
+      },
+      "platform": {
+        "elevenst": 1706,
+        "kurly": 1031,
+        "musinsa": 793,
+        "naver": 87,
+        "ohouse": 95,
+        "oliveyoung": 2946
+      },
+      "category": {
+        "BABY": 236,
+        "BEAUTY": 2808,
+        "DIET": 24,
+        "ELECTRONICS": 499,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 460,
+        "FOOD": 836,
+        "HEALTH_SUPPLEMENT": 427,
+        "LIVING": 683,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 320
+      },
+      "unique_products": 4079,
+      "unique_duplicate_clusters": 3836,
+      "rows_in_duplicate_clusters": 3836,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "signal_source_priority_duplicate_first",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false,
+        "signal_order": [
+          "REPEATED_SHORT_TEMPLATE",
+          "EXACT_DUPLICATE_CLUSTER",
+          "PRODUCT_DESCRIPTION_REPLACEMENT",
+          "EXTREME_RESULT_CLAIM",
+          "EXTREME_RESULT_EXPANDED_PROTOTYPE",
+          "IMMEDIATE_EFFECT_CLAIM",
+          "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE",
+          "PROMOTIONAL_TEMPLATE",
+          "LOW_INFORMATION_PRAISE"
+        ]
+      },
+      "final_unique_row_uid": 6624,
+      "target_shortfall": 3376,
+      "bucket_selected": {
+        "signal_focused": 3375,
+        "hard_negative": 1749,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200,
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 460,
+        "EXTREME_RESULT_CLAIM": 24,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 61,
+        "IMMEDIATE_EFFECT_CLAIM": 8,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 8,
+        "PROMOTIONAL_TEMPLATE": 350,
+        "LOW_INFORMATION_PRAISE": 64,
+        "HARD_NEGATIVE_UNION": 1749,
+        "HARD_NEGATIVE_CANDIDATE": 482,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1267,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "REPEATED_SHORT_TEMPLATE": {
+          "requested": 1200,
+          "available": 67596,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 67596,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXACT_DUPLICATE_CLUSTER": {
+          "requested": 1200,
+          "available": 178311,
+          "raw_row_uids_already_used": 1200,
+          "available_after_row_uid_exclusion": 177111,
+          "selected": 1200,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "PRODUCT_DESCRIPTION_REPLACEMENT": {
+          "requested": 574,
+          "available": 574,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 574,
+          "selected": 460,
+          "unfilled": 114,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 114,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_CLAIM": {
+          "requested": 37,
+          "available": 37,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 37,
+          "selected": 24,
+          "unfilled": 13,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 13,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": {
+          "requested": 1300,
+          "available": 169,
+          "raw_row_uids_already_used": 4,
+          "available_after_row_uid_exclusion": 165,
+          "selected": 61,
+          "unfilled": 1239,
+          "sequential_loss_attribution": {
+            "source_availability": 1131,
+            "row_uid_collision": 4,
+            "product_cap": 84,
+            "duplicate_cluster_cap": 20,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_CLAIM": {
+          "requested": 10,
+          "available": 10,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 10,
+          "selected": 8,
+          "unfilled": 2,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 2,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": {
+          "requested": 900,
+          "available": 35,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 28,
+          "selected": 8,
+          "unfilled": 892,
+          "sequential_loss_attribution": {
+            "source_availability": 865,
+            "row_uid_collision": 7,
+            "product_cap": 16,
+            "duplicate_cluster_cap": 4,
+            "normalized_text_cap": 0
+          }
+        },
+        "PROMOTIONAL_TEMPLATE": {
+          "requested": 497,
+          "available": 497,
+          "raw_row_uids_already_used": 7,
+          "available_after_row_uid_exclusion": 490,
+          "selected": 350,
+          "unfilled": 147,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 7,
+            "product_cap": 129,
+            "duplicate_cluster_cap": 11,
+            "normalized_text_cap": 0
+          }
+        },
+        "LOW_INFORMATION_PRAISE": {
+          "requested": 282,
+          "available": 278,
+          "raw_row_uids_already_used": 10,
+          "available_after_row_uid_exclusion": 268,
+          "selected": 64,
+          "unfilled": 218,
+          "sequential_loss_attribution": {
+            "source_availability": 4,
+            "row_uid_collision": 10,
+            "product_cap": 122,
+            "duplicate_cluster_cap": 82,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 365,
+          "available_after_row_uid_exclusion": 11910,
+          "selected": 1749,
+          "unfilled": 751,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 146,
+            "duplicate_cluster_cap": 605,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 10
+        }
+      },
+      "platform": {
+        "elevenst": 1649,
+        "kurly": 997,
+        "musinsa": 796,
+        "naver": 89,
+        "ohouse": 116,
+        "oliveyoung": 2977
+      },
+      "category": {
+        "BABY": 256,
+        "BEAUTY": 2763,
+        "DIET": 24,
+        "ELECTRONICS": 502,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 446,
+        "FOOD": 803,
+        "HEALTH_SUPPLEMENT": 410,
+        "LIVING": 711,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 344
+      },
+      "unique_products": 4045,
+      "unique_duplicate_clusters": 3799,
+      "rows_in_duplicate_clusters": 3799,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "signal_union_fill_product_2",
+      "policy": {
+        "product_cap": 2,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false,
+        "signal_union_fill": true
+      },
+      "final_unique_row_uid": 9020,
+      "target_shortfall": 980,
+      "bucket_selected": {
+        "signal_focused": 6000,
+        "hard_negative": 1520,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "SIGNAL_UNION": 6000,
+        "HARD_NEGATIVE_UNION": 1520,
+        "HARD_NEGATIVE_CANDIDATE": 644,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 876,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "SIGNAL_UNION": {
+          "requested": 6000,
+          "available": 179418,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 179418,
+          "selected": 6000,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 309,
+          "available_after_row_uid_exclusion": 11966,
+          "selected": 1520,
+          "unfilled": 980,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 526,
+            "duplicate_cluster_cap": 454,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 16072,
+          "raw_row_uids_already_used_in_frame": 12
+        }
+      },
+      "platform": {
+        "elevenst": 2472,
+        "kurly": 1629,
+        "musinsa": 1525,
+        "naver": 93,
+        "ohouse": 130,
+        "oliveyoung": 3171
+      },
+      "category": {
+        "BABY": 265,
+        "BEAUTY": 2909,
+        "DIET": 24,
+        "ELECTRONICS": 679,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 1079,
+        "FOOD": 1573,
+        "HEALTH_SUPPLEMENT": 473,
+        "LIVING": 1211,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 442
+      },
+      "unique_products": 5344,
+      "unique_duplicate_clusters": 6692,
+      "rows_in_duplicate_clusters": 6692,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "signal_union_fill_product_3",
+      "policy": {
+        "product_cap": 3,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false,
+        "signal_union_fill": true
+      },
+      "final_unique_row_uid": 9930,
+      "target_shortfall": 70,
+      "bucket_selected": {
+        "signal_focused": 6000,
+        "hard_negative": 2430,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "SIGNAL_UNION": 6000,
+        "HARD_NEGATIVE_UNION": 2430,
+        "HARD_NEGATIVE_CANDIDATE": 943,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1487,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "SIGNAL_UNION": {
+          "requested": 6000,
+          "available": 179418,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 179418,
+          "selected": 6000,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 275,
+          "available_after_row_uid_exclusion": 12000,
+          "selected": 2430,
+          "unfilled": 70,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 70,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 23549,
+          "raw_row_uids_already_used_in_frame": 27
+        }
+      },
+      "platform": {
+        "elevenst": 2791,
+        "kurly": 1611,
+        "musinsa": 1420,
+        "naver": 88,
+        "ohouse": 132,
+        "oliveyoung": 3888
+      },
+      "category": {
+        "BABY": 334,
+        "BEAUTY": 3587,
+        "DIET": 36,
+        "ELECTRONICS": 721,
+        "ETC_UNKNOWN": 160,
+        "FASHION": 880,
+        "FOOD": 1519,
+        "HEALTH_SUPPLEMENT": 637,
+        "LIVING": 1223,
+        "PET": 326,
+        "SPORTS_OUTDOOR": 507
+      },
+      "unique_products": 4621,
+      "unique_duplicate_clusters": 7292,
+      "rows_in_duplicate_clusters": 7292,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    },
+    {
+      "name": "signal_union_fill_product_5",
+      "policy": {
+        "product_cap": 5,
+        "cluster_cap": 1,
+        "text_cap": null,
+        "ordering": "round_robin",
+        "bucket_order": [
+          "signal",
+          "hard",
+          "random"
+        ],
+        "random_duplicate_metadata": false,
+        "signal_union_fill": true
+      },
+      "final_unique_row_uid": 10000,
+      "target_shortfall": 0,
+      "bucket_selected": {
+        "signal_focused": 6000,
+        "hard_negative": 2500,
+        "random_control": 1500
+      },
+      "source_selected": {
+        "SIGNAL_UNION": 6000,
+        "HARD_NEGATIVE_UNION": 2500,
+        "HARD_NEGATIVE_CANDIDATE": 720,
+        "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1780,
+        "RANDOM_CONTROL_ELIGIBLE": 1500
+      },
+      "source_diagnostics": {
+        "SIGNAL_UNION": {
+          "requested": 6000,
+          "available": 179418,
+          "raw_row_uids_already_used": 0,
+          "available_after_row_uid_exclusion": 179418,
+          "selected": 6000,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "HARD_NEGATIVE_UNION": {
+          "requested": 2500,
+          "available": 12275,
+          "raw_row_uids_already_used": 271,
+          "available_after_row_uid_exclusion": 12004,
+          "selected": 2500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          }
+        },
+        "RANDOM_CONTROL_ELIGIBLE": {
+          "requested": 1500,
+          "available": 773638,
+          "raw_row_uids_already_used": null,
+          "available_after_row_uid_exclusion": null,
+          "selected": 1500,
+          "unfilled": 0,
+          "sequential_loss_attribution": {
+            "source_availability": 0,
+            "row_uid_collision": 0,
+            "product_cap": 0,
+            "duplicate_cluster_cap": 0,
+            "normalized_text_cap": 0
+          },
+          "diagnostic_frame_available": 37903,
+          "raw_row_uids_already_used_in_frame": 20
+        }
+      },
+      "platform": {
+        "elevenst": 2827,
+        "kurly": 1688,
+        "musinsa": 1439,
+        "naver": 95,
+        "ohouse": 135,
+        "oliveyoung": 3816
+      },
+      "category": {
+        "BABY": 464,
+        "BEAUTY": 3373,
+        "DIET": 60,
+        "ELECTRONICS": 712,
+        "ETC_UNKNOWN": 210,
+        "FASHION": 726,
+        "FOOD": 1406,
+        "HEALTH_SUPPLEMENT": 877,
+        "LIVING": 1159,
+        "PET": 412,
+        "SPORTS_OUTDOOR": 601
+      },
+      "unique_products": 3791,
+      "unique_duplicate_clusters": 7660,
+      "rows_in_duplicate_clusters": 7660,
+      "max_rows_per_duplicate_cluster": 1,
+      "normalized_texts_repeated_in_selection": 0,
+      "max_rows_per_normalized_text": 1
+    }
+  ],
+  "tested_maximum": {
+    "name": "signal_union_fill_product_5",
+    "policy": {
+      "product_cap": 5,
+      "cluster_cap": 1,
+      "text_cap": null,
+      "ordering": "round_robin",
+      "bucket_order": [
+        "signal",
+        "hard",
+        "random"
+      ],
+      "random_duplicate_metadata": false,
+      "signal_union_fill": true
+    },
+    "final_unique_row_uid": 10000,
+    "target_shortfall": 0,
+    "bucket_selected": {
+      "signal_focused": 6000,
+      "hard_negative": 2500,
+      "random_control": 1500
+    },
+    "source_selected": {
+      "SIGNAL_UNION": 6000,
+      "HARD_NEGATIVE_UNION": 2500,
+      "HARD_NEGATIVE_CANDIDATE": 720,
+      "HARD_NEGATIVE_EXPANDED_CANDIDATE": 1780,
+      "RANDOM_CONTROL_ELIGIBLE": 1500
+    },
+    "source_diagnostics": {
+      "SIGNAL_UNION": {
+        "requested": 6000,
+        "available": 179418,
+        "raw_row_uids_already_used": 0,
+        "available_after_row_uid_exclusion": 179418,
+        "selected": 6000,
+        "unfilled": 0,
+        "sequential_loss_attribution": {
+          "source_availability": 0,
+          "row_uid_collision": 0,
+          "product_cap": 0,
+          "duplicate_cluster_cap": 0,
+          "normalized_text_cap": 0
+        }
+      },
+      "HARD_NEGATIVE_UNION": {
+        "requested": 2500,
+        "available": 12275,
+        "raw_row_uids_already_used": 271,
+        "available_after_row_uid_exclusion": 12004,
+        "selected": 2500,
+        "unfilled": 0,
+        "sequential_loss_attribution": {
+          "source_availability": 0,
+          "row_uid_collision": 0,
+          "product_cap": 0,
+          "duplicate_cluster_cap": 0,
+          "normalized_text_cap": 0
+        }
+      },
+      "RANDOM_CONTROL_ELIGIBLE": {
+        "requested": 1500,
+        "available": 773638,
+        "raw_row_uids_already_used": null,
+        "available_after_row_uid_exclusion": null,
+        "selected": 1500,
+        "unfilled": 0,
+        "sequential_loss_attribution": {
+          "source_availability": 0,
+          "row_uid_collision": 0,
+          "product_cap": 0,
+          "duplicate_cluster_cap": 0,
+          "normalized_text_cap": 0
+        },
+        "diagnostic_frame_available": 37903,
+        "raw_row_uids_already_used_in_frame": 20
+      }
+    },
+    "platform": {
+      "elevenst": 2827,
+      "kurly": 1688,
+      "musinsa": 1439,
+      "naver": 95,
+      "ohouse": 135,
+      "oliveyoung": 3816
+    },
+    "category": {
+      "BABY": 464,
+      "BEAUTY": 3373,
+      "DIET": 60,
+      "ELECTRONICS": 712,
+      "ETC_UNKNOWN": 210,
+      "FASHION": 726,
+      "FOOD": 1406,
+      "HEALTH_SUPPLEMENT": 877,
+      "LIVING": 1159,
+      "PET": 412,
+      "SPORTS_OUTDOOR": 601
+    },
+    "unique_products": 3791,
+    "unique_duplicate_clusters": 7660,
+    "rows_in_duplicate_clusters": 7660,
+    "max_rows_per_duplicate_cluster": 1,
+    "normalized_texts_repeated_in_selection": 0,
+    "max_rows_per_normalized_text": 1
+  },
+  "schema_audit": {
+    "review_index_rows": 1151943,
+    "candidate_content_rows": 180900,
+    "candidate_manifest_rows": 180900,
+    "source_evidence_rows": 249295,
+    "random_control_eligible_rows": 773638,
+    "all_review_fields_available": [
+      "row_uid",
+      "platform",
+      "source_row",
+      "product_id",
+      "review_id",
+      "product_category_raw",
+      "normalized_category",
+      "normalized_content_hash",
+      "content_length",
+      "valid_identity",
+      "valid_content"
+    ],
+    "content_available_for_all_reviews": false,
+    "content_available_rows": 180900,
+    "content_missing_outside_candidate_content": 971043,
+    "can_apply_new_text_rules_outside_candidate_content": false,
+    "raw_csvs_currently_present": false,
+    "required_full_scan_inputs": [
+      "reviews_elevenst.csv",
+      "reviews_kurly.csv",
+      "reviews_musinsa.csv",
+      "reviews_naver.csv",
+      "reviews_ohouse.csv",
+      "reviews_oliveyoung.csv"
+    ],
+    "required_columns": [
+      "platform",
+      "product_id",
+      "review_id",
+      "content",
+      "product_category"
+    ],
+    "safe_full_corpus_conditions": [
+      "all six immutable raw CSVs mounted read-only",
+      "size/mtime/SHA signatures captured before and after",
+      "row count and platform identity validated",
+      "prototype outputs written to new paths",
+      "canonical SQLite and annotations opened read-only",
+      "no labels and no final 10K pool"
+    ],
+    "relevant_objects": [
+      "candidate_content",
+      "candidate_manifest",
+      "content_groups",
+      "duplicate_clusters",
+      "duplicate_members",
+      "group_platform",
+      "group_product",
+      "metadata",
+      "random_control_eligible",
+      "review_index",
+      "source_evidence"
+    ]
+  },
+  "findings": [
+    "v3의 category/platform balancing은 round-robin ordering이며 hard cap이나 quota rejection이 아니다.",
+    "Signal은 expanded EXTREME/IMMEDIATE의 requested quota가 availability를 크게 초과해 cap 적용 전부터 부족하다.",
+    "Balanced HARD_NEGATIVE 12,275는 raw union cardinality이며 signal 선점 및 product/cluster/text cap 이후의 독립 capacity가 아니다.",
+    "duplicate cluster와 normalized text는 canonical exact-duplicate 데이터에서 같은 hash cluster를 표현하므로 cap=1에서는 효과가 중첩된다.",
+    "source priority와 bucket order가 row_uid 선점 상태를 바꾸므로 손실은 독립적으로 합산할 수 없다.",
+    "v3 random-control frame에는 cluster/hash metadata가 전달되지 않아 random bucket에는 duplicate/text cap이 적용되지 않았다.",
+    "v3 보고서의 normalized_text_max_reviews=1 표기와 달리 선택 함수에는 별도 normalized-text cap이 구현되지 않았다."
+  ],
+  "safety": {
+    "automatic_human_labels_created": false,
+    "final_10k_pool_created": false,
+    "canonical_sqlite_modified": false,
+    "v3_outputs_modified": false
+  }
+}
