@@ -1,0 +1,329 @@
+{
+  "analysis_type": "allocation-only dry-run; no review dataset",
+  "scenarios": [
+    {
+      "name": "precision_first",
+      "bucket_targets": {
+        "signal_focused": 6000,
+        "hard_negative": 2500,
+        "random_control": 1500
+      },
+      "signal_source_requested": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 574,
+        "EXTREME_RESULT_CLAIM": 37,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 1100,
+        "IMMEDIATE_EFFECT_CLAIM": 10,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 800,
+        "PROMOTIONAL_TEMPLATE": 497,
+        "LOW_INFORMATION_PRAISE": 282,
+        "REPEATED_SHORT_TEMPLATE": 1350,
+        "EXACT_DUPLICATE_CLUSTER": 1350
+      },
+      "signal_source_feasible_before_row_uid_dedup": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 574,
+        "EXTREME_RESULT_CLAIM": 37,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 169,
+        "IMMEDIATE_EFFECT_CLAIM": 10,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 35,
+        "PROMOTIONAL_TEMPLATE": 497,
+        "LOW_INFORMATION_PRAISE": 278,
+        "REPEATED_SHORT_TEMPLATE": 1350,
+        "EXACT_DUPLICATE_CLUSTER": 1350
+      },
+      "signal_source_availability_shortfall": 1700,
+      "hard_negative_availability": 12275,
+      "hard_negative_target_feasible": true,
+      "random_control_available": 773638,
+      "duplicate_family_requested": 2700,
+      "duplicate_family_share_of_signal": 0.45,
+      "caps": {
+        "duplicate_cluster_max_reviews": 1,
+        "normalized_text_max_reviews": 1,
+        "product_max_reviews": 2
+      },
+      "category_soft_allocation_10k": {
+        "BEAUTY": 2100,
+        "FOOD": 2100,
+        "FASHION": 900,
+        "LIVING": 900,
+        "HEALTH_SUPPLEMENT": 900,
+        "ELECTRONICS": 750,
+        "DIET": 350,
+        "OTHER": 2000
+      },
+      "platform_soft_allocation_10k": {
+        "elevenst": 1900,
+        "kurly": 2600,
+        "musinsa": 1600,
+        "naver": 150,
+        "ohouse": 400,
+        "oliveyoung": 3350
+      },
+      "final_unique_row_uid": 6953,
+      "source_assignment_after_row_uid_dedup_and_caps": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 29,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 74,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 9,
+        "PROMOTIONAL_TEMPLATE": 376,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1350,
+        "EXACT_DUPLICATE_CLUSTER": 1350
+      },
+      "bucket_unique_row_uids": {
+        "signal_focused": 3795,
+        "hard_negative": 1658,
+        "random_control": 1500
+      },
+      "dedup_and_cap_shortfall": {
+        "signal_focused": 2205,
+        "hard_negative": 842,
+        "random_control": 0,
+        "total_10k": 3047
+      },
+      "actual_platform_distribution": {
+        "elevenst": 1801,
+        "kurly": 1052,
+        "musinsa": 852,
+        "naver": 92,
+        "ohouse": 127,
+        "oliveyoung": 3029
+      },
+      "actual_category_distribution": {
+        "BABY": 263,
+        "BEAUTY": 2846,
+        "DIET": 24,
+        "ELECTRONICS": 535,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 472,
+        "FOOD": 858,
+        "HEALTH_SUPPLEMENT": 448,
+        "LIVING": 768,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 374
+      },
+      "actual_duplicate_cluster_rows": 4058,
+      "actual_unique_duplicate_clusters": 4058,
+      "max_reviews_per_cluster": 1,
+      "max_reviews_per_product": 2
+    },
+    {
+      "name": "balanced",
+      "bucket_targets": {
+        "signal_focused": 6000,
+        "hard_negative": 2500,
+        "random_control": 1500
+      },
+      "signal_source_requested": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 574,
+        "EXTREME_RESULT_CLAIM": 37,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 1300,
+        "IMMEDIATE_EFFECT_CLAIM": 10,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 900,
+        "PROMOTIONAL_TEMPLATE": 497,
+        "LOW_INFORMATION_PRAISE": 282,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200
+      },
+      "signal_source_feasible_before_row_uid_dedup": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 574,
+        "EXTREME_RESULT_CLAIM": 37,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 169,
+        "IMMEDIATE_EFFECT_CLAIM": 10,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 35,
+        "PROMOTIONAL_TEMPLATE": 497,
+        "LOW_INFORMATION_PRAISE": 278,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200
+      },
+      "signal_source_availability_shortfall": 2000,
+      "hard_negative_availability": 12275,
+      "hard_negative_target_feasible": true,
+      "random_control_available": 773638,
+      "duplicate_family_requested": 2400,
+      "duplicate_family_share_of_signal": 0.4,
+      "caps": {
+        "duplicate_cluster_max_reviews": 1,
+        "normalized_text_max_reviews": 1,
+        "product_max_reviews": 2
+      },
+      "category_soft_allocation_10k": {
+        "BEAUTY": 1900,
+        "FOOD": 1900,
+        "FASHION": 1050,
+        "LIVING": 1000,
+        "HEALTH_SUPPLEMENT": 1000,
+        "ELECTRONICS": 900,
+        "DIET": 450,
+        "OTHER": 1800
+      },
+      "platform_soft_allocation_10k": {
+        "elevenst": 2000,
+        "kurly": 2600,
+        "musinsa": 1750,
+        "naver": 175,
+        "ohouse": 475,
+        "oliveyoung": 3000
+      },
+      "final_unique_row_uid": 6706,
+      "source_assignment_after_row_uid_dedup_and_caps": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 514,
+        "EXTREME_RESULT_CLAIM": 29,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 74,
+        "IMMEDIATE_EFFECT_CLAIM": 9,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 9,
+        "PROMOTIONAL_TEMPLATE": 376,
+        "LOW_INFORMATION_PRAISE": 84,
+        "REPEATED_SHORT_TEMPLATE": 1200,
+        "EXACT_DUPLICATE_CLUSTER": 1200
+      },
+      "bucket_unique_row_uids": {
+        "signal_focused": 3495,
+        "hard_negative": 1711,
+        "random_control": 1500
+      },
+      "dedup_and_cap_shortfall": {
+        "signal_focused": 2505,
+        "hard_negative": 789,
+        "random_control": 0,
+        "total_10k": 3294
+      },
+      "actual_platform_distribution": {
+        "elevenst": 1694,
+        "kurly": 1006,
+        "musinsa": 804,
+        "naver": 91,
+        "ohouse": 117,
+        "oliveyoung": 2994
+      },
+      "actual_category_distribution": {
+        "BABY": 263,
+        "BEAUTY": 2791,
+        "DIET": 24,
+        "ELECTRONICS": 509,
+        "ETC_UNKNOWN": 127,
+        "FASHION": 449,
+        "FOOD": 808,
+        "HEALTH_SUPPLEMENT": 425,
+        "LIVING": 723,
+        "PET": 238,
+        "SPORTS_OUTDOOR": 349
+      },
+      "actual_duplicate_cluster_rows": 3800,
+      "actual_unique_duplicate_clusters": 3800,
+      "max_reviews_per_cluster": 1,
+      "max_reviews_per_product": 2
+    },
+    {
+      "name": "diversity_first",
+      "bucket_targets": {
+        "signal_focused": 6000,
+        "hard_negative": 2500,
+        "random_control": 1500
+      },
+      "signal_source_requested": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 574,
+        "EXTREME_RESULT_CLAIM": 37,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 1500,
+        "IMMEDIATE_EFFECT_CLAIM": 10,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 1000,
+        "PROMOTIONAL_TEMPLATE": 497,
+        "LOW_INFORMATION_PRAISE": 282,
+        "REPEATED_SHORT_TEMPLATE": 1050,
+        "EXACT_DUPLICATE_CLUSTER": 1050
+      },
+      "signal_source_feasible_before_row_uid_dedup": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 574,
+        "EXTREME_RESULT_CLAIM": 37,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 169,
+        "IMMEDIATE_EFFECT_CLAIM": 10,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 35,
+        "PROMOTIONAL_TEMPLATE": 497,
+        "LOW_INFORMATION_PRAISE": 278,
+        "REPEATED_SHORT_TEMPLATE": 1050,
+        "EXACT_DUPLICATE_CLUSTER": 1050
+      },
+      "signal_source_availability_shortfall": 2300,
+      "hard_negative_availability": 12275,
+      "hard_negative_target_feasible": true,
+      "random_control_available": 773638,
+      "duplicate_family_requested": 2100,
+      "duplicate_family_share_of_signal": 0.35,
+      "caps": {
+        "duplicate_cluster_max_reviews": 1,
+        "normalized_text_max_reviews": 1,
+        "product_max_reviews": 1
+      },
+      "category_soft_allocation_10k": {
+        "BEAUTY": 1600,
+        "FOOD": 1600,
+        "FASHION": 1200,
+        "LIVING": 1150,
+        "HEALTH_SUPPLEMENT": 1100,
+        "ELECTRONICS": 1050,
+        "DIET": 550,
+        "OTHER": 1750
+      },
+      "platform_soft_allocation_10k": {
+        "elevenst": 2100,
+        "kurly": 2400,
+        "musinsa": 1900,
+        "naver": 200,
+        "ohouse": 550,
+        "oliveyoung": 2850
+      },
+      "final_unique_row_uid": 5227,
+      "source_assignment_after_row_uid_dedup_and_caps": {
+        "PRODUCT_DESCRIPTION_REPLACEMENT": 402,
+        "EXTREME_RESULT_CLAIM": 22,
+        "EXTREME_RESULT_EXPANDED_PROTOTYPE": 53,
+        "IMMEDIATE_EFFECT_CLAIM": 6,
+        "IMMEDIATE_EFFECT_EXPANDED_PROTOTYPE": 8,
+        "PROMOTIONAL_TEMPLATE": 262,
+        "LOW_INFORMATION_PRAISE": 77,
+        "REPEATED_SHORT_TEMPLATE": 1050,
+        "EXACT_DUPLICATE_CLUSTER": 1050
+      },
+      "bucket_unique_row_uids": {
+        "signal_focused": 2930,
+        "hard_negative": 797,
+        "random_control": 1500
+      },
+      "dedup_and_cap_shortfall": {
+        "signal_focused": 3070,
+        "hard_negative": 1703,
+        "random_control": 0,
+        "total_10k": 4773
+      },
+      "actual_platform_distribution": {
+        "elevenst": 1466,
+        "kurly": 817,
+        "musinsa": 799,
+        "naver": 56,
+        "ohouse": 100,
+        "oliveyoung": 1989
+      },
+      "actual_category_distribution": {
+        "BABY": 136,
+        "BEAUTY": 1832,
+        "DIET": 12,
+        "ELECTRONICS": 511,
+        "ETC_UNKNOWN": 67,
+        "FASHION": 442,
+        "FOOD": 782,
+        "HEALTH_SUPPLEMENT": 266,
+        "LIVING": 668,
+        "PET": 124,
+        "SPORTS_OUTDOOR": 387
+      },
+      "actual_duplicate_cluster_rows": 2814,
+      "actual_unique_duplicate_clusters": 2814,
+      "max_reviews_per_cluster": 1,
+      "max_reviews_per_product": 1
+    }
+  ],
+  "recommended_scenario": "balanced",
+  "created_final_10k_pool": false,
+  "automatic_human_labels_created": false
+}

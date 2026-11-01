@@ -1,0 +1,493 @@
+{
+  "analysis_type": "read-only raw CSV integrity verification; no rule scan",
+  "base_path": "<LOCAL_REVIEW_EXPORT>/review-export-20261017",
+  "files": [
+    {
+      "platform": "elevenst",
+      "relative_path": "reviews_elevenst.csv/reviews_elevenst.csv",
+      "exists": true,
+      "signature_before": {
+        "size": 76696780,
+        "mtime_ns": 1792237496403481500,
+        "mtime_utc": "2026-10-17T11:44:56.403481+00:00"
+      },
+      "stored_signature": {
+        "size": 76696780,
+        "mtime_ns": 1792237496403481500
+      },
+      "signature_match": {
+        "size": true,
+        "mtime_ns": true,
+        "all_stored_fields": true
+      },
+      "utf8_bom": false,
+      "encoding": "utf-8-sig compatible (strict UTF-8 decode passed)",
+      "header": [
+        "platform",
+        "product_id",
+        "review_id",
+        "content",
+        "rating",
+        "written_at",
+        "option",
+        "image_count",
+        "helpful_count",
+        "product_name",
+        "product_category",
+        "first_collected_at"
+      ],
+      "required_columns": {
+        "required": [
+          "platform",
+          "product_id",
+          "review_id",
+          "content",
+          "product_category"
+        ],
+        "missing_or_nonunique": [],
+        "duplicated_columns": [],
+        "valid": true
+      },
+      "decode_ok": true,
+      "signature_after": {
+        "size": 76696780,
+        "mtime_ns": 1792237496403481500,
+        "mtime_utc": "2026-10-17T11:44:56.403481+00:00"
+      },
+      "unchanged_during_verification": true,
+      "csv_rows": 171052,
+      "expected_rows": 171052,
+      "manifest_rows": 171052,
+      "row_count_match_expected": true,
+      "row_count_match_manifest": true,
+      "manifest_source_rows_not_seen": 0,
+      "mismatches": {
+        "missing_manifest_source_row": 0,
+        "platform_mismatch": 0,
+        "product_id_mismatch": 0,
+        "review_id_mismatch": 0,
+        "product_category_mismatch": 0,
+        "normalized_content_hash_mismatch": 0,
+        "content_length_mismatch": 0
+      },
+      "identity": {
+        "row_uid_unique_by_primary_key": true,
+        "business_identity_blank_rows": 0,
+        "business_identity_duplicate_groups": 0,
+        "business_identity_duplicate_extra_rows": 0,
+        "business_identity_unique": true
+      },
+      "mismatch_samples": [],
+      "analysis_fields_exact_match": true
+    },
+    {
+      "platform": "kurly",
+      "relative_path": "reviews_kurly.csv/reviews_kurly.csv",
+      "exists": true,
+      "signature_before": {
+        "size": 116727664,
+        "mtime_ns": 1792237448903184400,
+        "mtime_utc": "2026-10-17T11:44:08.903184+00:00"
+      },
+      "stored_signature": {
+        "size": 116727664,
+        "mtime_ns": 1792237448903184400
+      },
+      "signature_match": {
+        "size": true,
+        "mtime_ns": true,
+        "all_stored_fields": true
+      },
+      "utf8_bom": false,
+      "encoding": "utf-8-sig compatible (strict UTF-8 decode passed)",
+      "header": [
+        "platform",
+        "product_id",
+        "review_id",
+        "content",
+        "rating",
+        "written_at",
+        "option",
+        "image_count",
+        "helpful_count",
+        "product_name",
+        "product_category",
+        "first_collected_at"
+      ],
+      "required_columns": {
+        "required": [
+          "platform",
+          "product_id",
+          "review_id",
+          "content",
+          "product_category"
+        ],
+        "missing_or_nonunique": [],
+        "duplicated_columns": [],
+        "valid": true
+      },
+      "decode_ok": true,
+      "signature_after": {
+        "size": 116727664,
+        "mtime_ns": 1792237448903184400,
+        "mtime_utc": "2026-10-17T11:44:08.903184+00:00"
+      },
+      "unchanged_during_verification": true,
+      "csv_rows": 463843,
+      "expected_rows": 463843,
+      "manifest_rows": 463843,
+      "row_count_match_expected": true,
+      "row_count_match_manifest": true,
+      "manifest_source_rows_not_seen": 0,
+      "mismatches": {
+        "missing_manifest_source_row": 0,
+        "platform_mismatch": 0,
+        "product_id_mismatch": 0,
+        "review_id_mismatch": 0,
+        "product_category_mismatch": 0,
+        "normalized_content_hash_mismatch": 0,
+        "content_length_mismatch": 0
+      },
+      "identity": {
+        "row_uid_unique_by_primary_key": true,
+        "business_identity_blank_rows": 0,
+        "business_identity_duplicate_groups": 0,
+        "business_identity_duplicate_extra_rows": 0,
+        "business_identity_unique": true
+      },
+      "mismatch_samples": [],
+      "analysis_fields_exact_match": true
+    },
+    {
+      "platform": "musinsa",
+      "relative_path": "reviews_musinsa.csv/reviews_musinsa.csv",
+      "exists": true,
+      "signature_before": {
+        "size": 40936691,
+        "mtime_ns": 1792238340568740200,
+        "mtime_utc": "2026-10-17T11:59:00.568740+00:00"
+      },
+      "stored_signature": {
+        "size": 40936691,
+        "mtime_ns": 1792238340568740200
+      },
+      "signature_match": {
+        "size": true,
+        "mtime_ns": true,
+        "all_stored_fields": true
+      },
+      "utf8_bom": false,
+      "encoding": "utf-8-sig compatible (strict UTF-8 decode passed)",
+      "header": [
+        "platform",
+        "product_id",
+        "review_id",
+        "content",
+        "rating",
+        "written_at",
+        "option",
+        "image_count",
+        "helpful_count",
+        "product_name",
+        "product_category",
+        "first_collected_at"
+      ],
+      "required_columns": {
+        "required": [
+          "platform",
+          "product_id",
+          "review_id",
+          "content",
+          "product_category"
+        ],
+        "missing_or_nonunique": [],
+        "duplicated_columns": [],
+        "valid": true
+      },
+      "decode_ok": true,
+      "signature_after": {
+        "size": 40936691,
+        "mtime_ns": 1792238340568740200,
+        "mtime_utc": "2026-10-17T11:59:00.568740+00:00"
+      },
+      "unchanged_during_verification": true,
+      "csv_rows": 118192,
+      "expected_rows": 118192,
+      "manifest_rows": 118192,
+      "row_count_match_expected": true,
+      "row_count_match_manifest": true,
+      "manifest_source_rows_not_seen": 0,
+      "mismatches": {
+        "missing_manifest_source_row": 0,
+        "platform_mismatch": 0,
+        "product_id_mismatch": 0,
+        "review_id_mismatch": 0,
+        "product_category_mismatch": 0,
+        "normalized_content_hash_mismatch": 0,
+        "content_length_mismatch": 0
+      },
+      "identity": {
+        "row_uid_unique_by_primary_key": true,
+        "business_identity_blank_rows": 0,
+        "business_identity_duplicate_groups": 0,
+        "business_identity_duplicate_extra_rows": 0,
+        "business_identity_unique": true
+      },
+      "mismatch_samples": [],
+      "analysis_fields_exact_match": true
+    },
+    {
+      "platform": "naver",
+      "relative_path": "reviews_naver.csv/reviews_naver.csv",
+      "exists": true,
+      "signature_before": {
+        "size": 741697,
+        "mtime_ns": 1792238354401047500,
+        "mtime_utc": "2026-10-17T11:59:14.401047+00:00"
+      },
+      "stored_signature": {
+        "size": 741697,
+        "mtime_ns": 1792238354401047500
+      },
+      "signature_match": {
+        "size": true,
+        "mtime_ns": true,
+        "all_stored_fields": true
+      },
+      "utf8_bom": false,
+      "encoding": "utf-8-sig compatible (strict UTF-8 decode passed)",
+      "header": [
+        "platform",
+        "product_id",
+        "review_id",
+        "content",
+        "rating",
+        "written_at",
+        "option",
+        "image_count",
+        "helpful_count",
+        "product_name",
+        "product_category",
+        "first_collected_at"
+      ],
+      "required_columns": {
+        "required": [
+          "platform",
+          "product_id",
+          "review_id",
+          "content",
+          "product_category"
+        ],
+        "missing_or_nonunique": [],
+        "duplicated_columns": [],
+        "valid": true
+      },
+      "decode_ok": true,
+      "signature_after": {
+        "size": 741697,
+        "mtime_ns": 1792238354401047500,
+        "mtime_utc": "2026-10-17T11:59:14.401047+00:00"
+      },
+      "unchanged_during_verification": true,
+      "csv_rows": 1286,
+      "expected_rows": 1286,
+      "manifest_rows": 1286,
+      "row_count_match_expected": true,
+      "row_count_match_manifest": true,
+      "manifest_source_rows_not_seen": 0,
+      "mismatches": {
+        "missing_manifest_source_row": 0,
+        "platform_mismatch": 0,
+        "product_id_mismatch": 0,
+        "review_id_mismatch": 0,
+        "product_category_mismatch": 0,
+        "normalized_content_hash_mismatch": 0,
+        "content_length_mismatch": 0
+      },
+      "identity": {
+        "row_uid_unique_by_primary_key": true,
+        "business_identity_blank_rows": 0,
+        "business_identity_duplicate_groups": 0,
+        "business_identity_duplicate_extra_rows": 0,
+        "business_identity_unique": true
+      },
+      "mismatch_samples": [],
+      "analysis_fields_exact_match": true
+    },
+    {
+      "platform": "ohouse",
+      "relative_path": "reviews_ohouse.csv/reviews_ohouse.csv",
+      "exists": true,
+      "signature_before": {
+        "size": 3771221,
+        "mtime_ns": 1792238368216536400,
+        "mtime_utc": "2026-10-17T11:59:28.216536+00:00"
+      },
+      "stored_signature": {
+        "size": 3771221,
+        "mtime_ns": 1792238368216536400
+      },
+      "signature_match": {
+        "size": true,
+        "mtime_ns": true,
+        "all_stored_fields": true
+      },
+      "utf8_bom": false,
+      "encoding": "utf-8-sig compatible (strict UTF-8 decode passed)",
+      "header": [
+        "platform",
+        "product_id",
+        "review_id",
+        "content",
+        "rating",
+        "written_at",
+        "option",
+        "image_count",
+        "helpful_count",
+        "product_name",
+        "product_category",
+        "first_collected_at"
+      ],
+      "required_columns": {
+        "required": [
+          "platform",
+          "product_id",
+          "review_id",
+          "content",
+          "product_category"
+        ],
+        "missing_or_nonunique": [],
+        "duplicated_columns": [],
+        "valid": true
+      },
+      "decode_ok": true,
+      "signature_after": {
+        "size": 3771221,
+        "mtime_ns": 1792238368216536400,
+        "mtime_utc": "2026-10-17T11:59:28.216536+00:00"
+      },
+      "unchanged_during_verification": true,
+      "csv_rows": 6828,
+      "expected_rows": 6828,
+      "manifest_rows": 6828,
+      "row_count_match_expected": true,
+      "row_count_match_manifest": true,
+      "manifest_source_rows_not_seen": 0,
+      "mismatches": {
+        "missing_manifest_source_row": 0,
+        "platform_mismatch": 0,
+        "product_id_mismatch": 0,
+        "review_id_mismatch": 0,
+        "product_category_mismatch": 0,
+        "normalized_content_hash_mismatch": 0,
+        "content_length_mismatch": 0
+      },
+      "identity": {
+        "row_uid_unique_by_primary_key": true,
+        "business_identity_blank_rows": 0,
+        "business_identity_duplicate_groups": 0,
+        "business_identity_duplicate_extra_rows": 0,
+        "business_identity_unique": true
+      },
+      "mismatch_samples": [],
+      "analysis_fields_exact_match": true
+    },
+    {
+      "platform": "oliveyoung",
+      "relative_path": "reviews_oliveyoung.csv/reviews_oliveyoung.csv",
+      "exists": true,
+      "signature_before": {
+        "size": 214363720,
+        "mtime_ns": 1792238383132055600,
+        "mtime_utc": "2026-10-17T11:59:43.132056+00:00"
+      },
+      "stored_signature": {
+        "size": 214363720,
+        "mtime_ns": 1792238383132055600
+      },
+      "signature_match": {
+        "size": true,
+        "mtime_ns": true,
+        "all_stored_fields": true
+      },
+      "utf8_bom": false,
+      "encoding": "utf-8-sig compatible (strict UTF-8 decode passed)",
+      "header": [
+        "platform",
+        "product_id",
+        "review_id",
+        "content",
+        "rating",
+        "written_at",
+        "option",
+        "image_count",
+        "helpful_count",
+        "product_name",
+        "product_category",
+        "first_collected_at"
+      ],
+      "required_columns": {
+        "required": [
+          "platform",
+          "product_id",
+          "review_id",
+          "content",
+          "product_category"
+        ],
+        "missing_or_nonunique": [],
+        "duplicated_columns": [],
+        "valid": true
+      },
+      "decode_ok": true,
+      "signature_after": {
+        "size": 214363720,
+        "mtime_ns": 1792238383132055600,
+        "mtime_utc": "2026-10-17T11:59:43.132056+00:00"
+      },
+      "unchanged_during_verification": true,
+      "csv_rows": 390742,
+      "expected_rows": 390742,
+      "manifest_rows": 390742,
+      "row_count_match_expected": true,
+      "row_count_match_manifest": true,
+      "manifest_source_rows_not_seen": 0,
+      "mismatches": {
+        "missing_manifest_source_row": 0,
+        "platform_mismatch": 0,
+        "product_id_mismatch": 0,
+        "review_id_mismatch": 0,
+        "product_category_mismatch": 0,
+        "normalized_content_hash_mismatch": 0,
+        "content_length_mismatch": 0
+      },
+      "identity": {
+        "row_uid_unique_by_primary_key": true,
+        "business_identity_blank_rows": 0,
+        "business_identity_duplicate_groups": 0,
+        "business_identity_duplicate_extra_rows": 0,
+        "business_identity_unique": true
+      },
+      "mismatch_samples": [],
+      "analysis_fields_exact_match": true
+    }
+  ],
+  "summary": {
+    "accessible_files": 6,
+    "total_csv_rows": 1151943,
+    "expected_total": 1151943,
+    "manifest_total": 1151943,
+    "all_row_counts_match": true,
+    "all_stored_signatures_match": true,
+    "all_analysis_fields_match": true,
+    "all_files_unchanged_during_verification": true
+  },
+  "byte_for_byte_historical_identity_provable": false,
+  "modification_conclusion": "저장된 size/mtime signature와 전체 row identity, raw category, normalized content hash/length가 모두 일치한다. 따라서 기존 분석에 사용된 핵심 행과 본문은 동일하다고 강하게 확인된다. 다만 당시 raw-file SHA-256이 보존되지 않아 평점 등 manifest에 저장되지 않은 컬럼이나 CSV 직렬화까지 byte-for-byte 불변이었다고 확정할 수는 없다.",
+  "safety": {
+    "raw_files_modified": false,
+    "canonical_sqlite_modified": false,
+    "existing_reports_modified": false,
+    "labels_created": false,
+    "candidate_pool_created": false
+  }
+}
