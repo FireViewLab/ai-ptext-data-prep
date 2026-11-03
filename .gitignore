@@ -1,6 +1,7 @@
 .venv/
 raw/
 outputs/
+private_outputs/
 __pycache__/
 *.pyc
 .env
